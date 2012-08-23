@@ -10,7 +10,7 @@ Each individual blog entry has its own page, which looks more or less like a nor
 
 The "blogroll" view shows all the entries, but in more of a traditional view.
 
-[Wok]: github.com/mythmon/wok
+[Wok]: https://github.com/mythmon/wok
 [mikesite]: https://github.com/mythmon
 
 
