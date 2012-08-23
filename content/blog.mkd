@@ -1,0 +1,4 @@
+title: Designicity
+type: blog
+url: /blog/index.html
+---

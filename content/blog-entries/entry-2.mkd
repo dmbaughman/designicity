@@ -1,0 +1,10 @@
+title: entry #2
+category: blog
+type: blog-entry
+date: 2012-8-15
+image: /img/hudson-bangle-table.jpg
+image-alt: The Bangle Table
+snippet: >
+    This is a very stylish table, which looks rather short.
+---
+Content for blog entry #2.  It doesn't get much better than this!
