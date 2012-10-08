@@ -1,9 +1,0 @@
-title: entry #1
-category: blog
-type: blog-entry
-image: /img/art-of-board-tiles.jpeg
-image-alt: Close-up picture of tiles made from used skateboards.
-snippet: >
-    Snip, snip, snip, this is a little snippet.
----
-Content for blog entry #1.  Exciting stuff, eh?

@@ -1,10 +1,277 @@
 // CUSTOM STYLES
 // ---------
 
-body {
-	padding: 60px 0 40px; /* padding for fixed top and bottom bars */
+/*body {
+	padding-bottom: 50px;
+}*/
+
+::-moz-selection { background: @medTeal; color: #fff; text-shadow: none; }
+::selection { background: @medTeal; color: #fff; text-shadow: none; }
+
+// -----------------------
+// Helper Classes
+// ----------------------- 
+
+.padding {
+	padding: 10px 20px;
 }
 
-.logo {
-	padding: 0 20px;
+.relative {
+	position: relative;
+}
+
+.shadow {
+	.box-shadow(1px 1px 4px @sky);
+}
+
+#logo img {
+	padding-left: 10px;
+}
+
+// -----------------------
+// Masonry
+// ----------------------- 
+
+.item {
+	//width: 220px;
+	margin: 0 20px 20px 0;
+	float: left;
+	position: relative;
+}
+
+.col1 {
+	min-height: 140px;
+	width: 220px;
+}
+.col2 {
+	min-height: 220px;
+	width: 340px;
+}
+.col3 {
+	min-height: 300px
+	width: 460px;
+}
+.col4 {
+	min-height: 460px;
+	width: 580px;
+}
+
+/*.height1 {
+	height: 140px;
+}
+.height2 {
+	height:	300px;
+}
+.height3 {
+	height:	460px;
+}*/
+
+.color-block {
+	background: @medTeal;
+	display: block;
+}
+
+
+// -----------------------
+// B/W Overlay Plugin
+// ----------------------- 
+
+.bwWrapper {
+    position:relative;
+    display:block;
+}
+
+// -----------------------
+// Header & Navs
+// ----------------------- 
+
+#header {
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.site-logo {
+	width: 240px;
+}
+
+#site-nav, #mobile-nav {
+	font-family: @serifFontFamily;
+	font-weight: 100;
+	font-size: 18px;
+	margin: 20px 0;
+	text-transform: uppercase;		
+}
+
+#mobile-nav {
+	li > a {
+		margin: 0 10px 0 0;
+	}
+}
+
+// -----------------------
+// Content Stuffs
+// ----------------------- 
+
+.flag {
+	background: @medTeal;
+	.border-radius(0 10px);
+	top: 10px;
+	color: @white;
+	left: 0;
+	margin-top: 0;
+	min-width: 200px;
+	//opacity: .9;
+	padding: 5px 10px;
+	//position: absolute;
+}
+
+.post .standout {
+	color: @teal;
+	//display: block;
+	font-family: 'Petit Formal Script', cursive;
+	font-size: @baseFontSize;
+	//text-align: center;
+}
+
+// -----------------------
+// Sidebar & Footer
+// ----------------------- 
+
+#about-sidebar {
+	h4 {
+	}
+	p, li {
+		color: @gray;
+		line-height: 160%;
+	}
+}
+
+#footer {
+	background: @grayDarker;
+	border-top: 1px solid @gray;
+	color: @grayLight;
+	font-size: 12px;
+}
+
+// -----------------------
+// Social Media Icons
+// ----------------------- 
+
+.icons-social-lighter, .icons-social-light, .icons-social-medium, .icons-social-dark {
+	background: url('/img/icons-social.png') no-repeat 0 0;
+	display: inline-block;
+	height: 14px;
+	margin: 0 5px -2px 0;
+	width: 14px;
+}
+
+// Facebook
+.icons-social-lighter.facebook {
+	background-position: 0 0;
+}
+
+.icons-social-light.facebook {
+	background-position: 0 -14px;
+}
+
+.icons-social-medium.facebook {
+	background-position: 0 -28px;
+}
+
+.icons-social-dark.facebook {
+	background-position: 0 -42px;
+}
+
+// Twitter
+.icons-social-lighter.twitter {
+	background-position: -14px 0;
+}
+
+.icons-social-light.twitter {
+	background-position: -14px -14px;
+}
+
+.icons-social-medium.twitter {
+	background-position: -14px -28px;
+}
+
+.icons-social-dark.twitter {
+	background-position: -14px -42px;
+}
+
+//Pinterest
+.icons-social-lighter.pinterest {
+	background-position: -28px 0;
+}
+
+.icons-social-light.pinterest {
+	background-position: -28px -14px;
+}
+
+.icons-social-medium.pinterest {
+	background-position: -28px -28px;
+}
+
+.icons-social-dark.pinterest {
+	background-position: -28px -42px;
+}
+
+// Email
+.icons-social-lighter.email {
+	background-position: -42px 0;
+}
+
+.icons-social-light.email {
+	background-position: -42px -14px;
+}
+
+.icons-social-medium.email {
+	background-position: -42px -28px;
+}
+
+.icons-social-dark.email {
+	background-position: -42px -42px;
+}
+
+// -----------------------
+//  Media Queries
+// ----------------------- 
+
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	body {
+		padding-right: 0 !important;
+		padding-left: 0 !important;}
+	.flag {
+		bottom: 10px;
+		left: 10px;
+		position: static;
+	}	
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	// Masonry Fixes for Mobile
+	.item {
+		margin: 2%;
+		display: block;
+	}
+	
+	.col1, .col2, .col3 {
+		width:95%;
+	}
+	
+
+
 }

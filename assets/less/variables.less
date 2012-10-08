@@ -29,6 +29,11 @@
 @pink:                  #c3325f;
 @purple:                #7a43b6;
 
+// Custom Colors
+// -------------------------
+@teal:					#15C4CF;
+@medTeal:				#7EDFEA;
+@sky:					#CCF5F9;
 
 // Scaffolding
 // -------------------------
@@ -38,24 +43,25 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
-@linkColorHover:        darken(@linkColor, 15%);
+@linkColor:             @teal;
+@linkColorHover:        @medTeal;
 
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@sansFontFamily:        'Arimo', Helvetica, Arial, sans-serif;
+@serifFontFamily:       'Unna', Garamond, Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
+
 
 @baseFontSize:          14px;
 @baseFontFamily:        @sansFontFamily;
-@baseLineHeight:        20px;
+@baseLineHeight:        24px;
 @altFontFamily:         @serifFontFamily;
 
-@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    bold;    // instead of browser default, bold
-@headingsColor:         inherit; // empty to use BS default, @textColor
+@headingsFontFamily:    'Raleway', 'Century Gothic', serif;
+@headingsFontWeight:    200;    // instead of browser default, bold
+@headingsColor:         @medTeal; // empty to use BS default, @textColor
 
 
 // Tables

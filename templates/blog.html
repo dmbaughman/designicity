@@ -1,14 +1,47 @@
 {% extends "base.html" %}
 
-{% block body %}
-<h1>Home Page View of Blog Entries</h1>
-	{% if page.subpages %}
-		{# % for page.subpages % #}
-			<div class="entry">
-				<h1>{{page.title}}</h1>
-				<img src="{{page.image}}" alt="{{page.img-alt}}" />
-				<p>{{page.snippet}}</p>
+{%- block content %}
+  <!--hgroup class="pagehead">
+    <h1>{{ page.title }}</h1>
+    {%- if page.subtitle %}
+      <h2>{{ page.subtitle }}</h2>
+    {%- endif %}
+  </hgroup-->
+  {{ page.content }}
+	<div class="row">
+		<div class="blogroll span9">
+		{% for subpage in site.categories['blog']|sort(attribute='datetime', reverse=True) %}
+			<div class="relative">
+				<div class="row">
+					<!--div class="span3 post-info"-->
+						<!--p class="date">{{ subpage.date }}</p-->
+					    <!--ul class="unstyled">
+						    {% for tag in subpage.tags %}
+						    <li class="tag">{{tag}}</li>
+						    {% endfor %}
+					    </ul-->
+					<!--/div-->
+					<div class="span3">
+						<h3 class="flag">{{ subpage.title }}</h3>
+						<p class="lead">{{ subpage.content|truncate(length=100) }}
+							<a href="{{ subpage.url }}">
+							    <!-- "Much greater than" symbol -->
+							    continue &raquo;
+							</a>
+						</p>
+					</div>
+					<div class="span6">
+						<!-- {{ subpage.preview }} -->
+						<a href="{{ subpage.url }}">
+							<img class="shadow" src="{{ subpage.img }}" alt="{{ subpage.img_alt }}" />
+						</a>
+					</div>	
+				</div>
 			</div>
-		{# % endfor % #}
-	{% endif %}
-{% endblock body %}
+			<br />
+			<br />
+		{% endfor %}
+		</div><!-- end blogroll -->
+		{% include "about-sidebar.html" ignore missing %}
+	</div>
+{%- endblock %}
