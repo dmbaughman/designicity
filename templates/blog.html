@@ -1,37 +1,31 @@
-{% extends "base.html" %}
+{% extends "blog-base.html" %}
 
-{%- block content %}
-  <!--hgroup class="pagehead">
-    <h1>{{ page.title }}</h1>
-    {%- if page.subtitle %}
-      <h2>{{ page.subtitle }}</h2>
-    {%- endif %}
-  </hgroup-->
-  {{ page.content }}
-	<div class="row">
-		<div class="blogroll span9">
-		{% for subpage in site.categories['blog']|sort(attribute='datetime', reverse=True) %}
-			<div class="relative">
-				<div class="row">
-					<!--div class="span3 post-info"-->
-						<!--p class="date">{{ subpage.date }}</p-->
-					    <!--ul class="unstyled">
-						    {% for tag in subpage.tags %}
-						    <li class="tag">{{tag}}</li>
-						    {% endfor %}
-					    </ul-->
-					<!--/div-->
+{%- block blog_content %}
+	{% for subpage in site.categories['blog']|sort(attribute='datetime', reverse=True) %}
+		<div class="article">
+			<div class="{% for tag in page.tags %}{{nospace(tag)}} {% endfor %}">
+				<div class="row relative">
 					<div class="span3">
-						<h3 class="flag">{{ subpage.title }}</h3>
-						<p class="lead">{{ subpage.content|truncate(length=100) }}
-							<a href="{{ subpage.url }}">
-							    <!-- "Much greater than" symbol -->
-							    continue &raquo;
-							</a>
-						</p>
+						<h3 class="span5 flag hidden-phone">{{ subpage.title }}</h3>
+						<h4 class="span5 flag visible-phone">{{ subpage.title }}</h4>
+						<h3 class="flag noshow hidden-phone">&nbsp;</h3>
+						{{ subpage.content|truncate(length=100) }}
+						<a href="{{ subpage.url }}">
+						    <!-- "Much greater than" symbol -->
+						    continue &raquo;
+						</a>
+		                <ul class="unstyled">
+		                    {% for tag in subpage.tags|sort %}
+		                        <li>
+		                            {{ tag_link(tag, tag) }} 
+		                        </li>
+		                    {% endfor %}
+		                </ul>
+						<a href="http://pinterest.com/pin/create/button/?url=http://designicity.com{{ subpage.url }}&media=http://designicity.com{{ subpage.img }}&description={{ subpage.img_alt }}" class="pin-it-button" count-layout="horizontal"><img border="0" src="http://assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>		                
+		                
+		                					
 					</div>
 					<div class="span6">
-						<!-- {{ subpage.preview }} -->
 						<a href="{{ subpage.url }}">
 							<img class="shadow" src="{{ subpage.img }}" alt="{{ subpage.img_alt }}" />
 						</a>
@@ -40,8 +34,6 @@
 			</div>
 			<br />
 			<br />
-		{% endfor %}
-		</div><!-- end blogroll -->
-		{% include "about-sidebar.html" ignore missing %}
-	</div>
+		</div>
+	{% endfor %}
 {%- endblock %}
