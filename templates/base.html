@@ -60,8 +60,8 @@
 	<!-- End #header -->
 	
 	<div id="content" class="container padding">
-	{%- block content %}
-	{%- endblock %}
+	{% block content %}
+	{% endblock %}
 	</div>
 	
 	<!-- Start #footer -->
@@ -73,7 +73,9 @@
 	</div>
 	
 	<!-- Document Ready Scripts -->
-	<script src="/js/bootstrap-ck.js"></script>    
+	<script src="/js/bootstrap-modal.js"></script>    
+	<script src="/js/bootstrap-popover.js"></script>    
+	<script src="/js/bootstrap-affix.js"></script>    
 	{% block bottom %}{% endblock %}
 </body>
 </html>

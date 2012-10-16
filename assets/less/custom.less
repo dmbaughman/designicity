@@ -28,6 +28,11 @@
 	padding-left: 10px;
 }
 
+.inline {
+	display: inline;
+	margin-right: 10px;
+}
+
 // -----------------------
 // Masonry
 // ----------------------- 
@@ -40,7 +45,7 @@
 }
 
 .col1 {
-	min-height: 140px;
+	min-height: 300px;
 	width: 220px;
 }
 .col2 {
@@ -48,11 +53,10 @@
 	width: 340px;
 }
 .col3 {
-	min-height: 300px
+	min-height: 140px;
 	width: 460px;
 }
 .col4 {
-	min-height: 460px;
 	width: 580px;
 }
 
@@ -134,7 +138,7 @@
 	visibility: hidden;
 }
 
-.post .standout, .about-page .standout {
+.blogroll .standout, .about-page .standout {
 	color: @teal;
 	//display: block;
 	font-family: @headingsFontFamily; /*'Petit Formal Script', cursive;*/
@@ -169,11 +173,15 @@
 }
 
 // -----------------------
-// Social Media Icons
+// Social Stuffs
 // ----------------------- 
 
+.fb-like {
+	top: -3px;
+}
+
 .icons-social-lighter, .icons-social-light, .icons-social-medium, .icons-social-dark {
-	background: url('/img/icons-social.png') no-repeat 0 0;
+	background: url('/img/ico/icons-social.png') no-repeat 0 0;
 	display: inline-block;
 	height: 14px;
 	margin: 0 5px -2px 0;
