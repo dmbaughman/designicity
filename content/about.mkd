@@ -1,0 +1,20 @@
+title: About
+type: about
+tags: [_nav]
+nav_weight: 3
+---
+<div class="row about-page">
+	<div class="span6">
+		<p><span class="standout">Where has all the originality gone?</span>  As an interior designer your creativity is limitless but your ability to bring that vision to reality is limited by the resources available to you.  As a young designer I felt so much frustration because it seemed like designers were using the same resources, shopping at the same stores, re-using the same design concepts-same, same, same.</p>
+		<p>It wasn't until I moved to New York City that <span class="standout">I found hope in bringing to life my designs</span>  as I have discovered pieces and products that I had never seen before, unique and fabulous.  This city is inspiring.  There is a creative collaboration that happens here that is unlike anywhere else and I have barely scratched the surface in discovering what is out there, hidden gems in a vast jungle skyscrapers.  I wish I had had someone to introduce me to pieces and designs that were out of my view.<span class="standout"> I am here to be that resource.</span></p>
+	</div>
+	<div class="span6">
+		<p>I have found some incredible design pieces that have changed my perspective on design and how I work as a designer.  I am so excited to share my finds with other designers and lovers of design alike. 
+		<span class="standout">I'm on a mission</span> to find inspired, meaningful pieces and this doesn't mean scouring the shelves of Crate and Barrel.</p>
+		<p>My search takes me to the to the unique-to-New York design studios, to craftsmen in the villages of Kenya, and to chic showrooms in Amsterdam.  My search is extensive and continuous, always in a state of design.  <span class="standout">This is Designicity.</span></p>
+	</div>
+</div>
+
+
+
+

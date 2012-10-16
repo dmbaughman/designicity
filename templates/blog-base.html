@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+
+{# Template macros #}
+{# --------------- #}
+{# Macros to help build the blog system. #}
+{# For more info on jinja2 macros, visit #}
+{# http://jinja.pocoo.org/docs/templates/#macros #}
+
+{# Nospace macro #}
+{# Replace spaces with dashes #}
+{% macro nospace(s) -%}
+    {{ s|replace(" ", "-") }}
+{%- endmacro %}
+
+{# Tag link macro #}
+{# Build a link for a tag, link to its hashed name #}
+{% macro tag_link(tag, label=None) -%}
+    <span class='tag-link'>
+        <a href='/blog.html#{{ nospace(tag) }}' class='{{ nospace(tag) }}'>
+        {% if label %}{{ label }}{% else %}{{ tag }}{% endif %}
+        </a>
+    </span>
+{%- endmacro %}
+
+{# Tag list macro #}
+{# Build a tag list from a set of tags #}
+{% macro tag_list(tags) -%}
+    {% for tag in tags %}
+        {% if loop.length == 1 %}
+            {{ tag_link(tag) }}
+        {% elif not loop.last %}
+            {{ tag_link(tag) }},
+        {% else %}
+            and {{ tag_link(tag) }}
+        {% endif %}
+    {% endfor %}
+{%- endmacro %}
+
+{# JavaScript #}
+{# ---------- #}
+
+{# JavaScript to run before document loads #}
+{% block head %}
+	<script type="text/javascript">
+	
+	// Tag filtering (pre-load)
+	// ------------------------
+	function filter_by_tag(tag){
+	    /* Remove all blog posts that aren't tagged with `tag`, show
+	     * all that are. Ignore blank tag names.
+	     */
+	
+	    if(!tag == ""){
+	        $(".article").each(function(index){
+	            if( $(this).find("." + tag).length ){
+	                $(this).show();
+	            } else {
+	                $(this).hide();
+	            }
+	        });
+	    }
+	}
+	
+	function show_all(){
+	    /* Show all blog posts
+	     */
+	
+	    $(".article").show();
+	}
+	</script>
+{% endblock %}
+
+{# JavaScript to run when document is ready #}
+{% block bottom %}
+	<script type="text/javascript">
+	// Tag filtering (post-load)
+	// -------------------------
+	
+	$(".tag-link").click(function(){
+	    filter_by_tag($(this).find("a").attr('class'));
+	});
+	
+	$("#sidebar #show-all").click(function(){
+	    show_all();
+	});
+	
+	var filter_on_hash = function(){
+	    // If there is a hash in the URL, filter immediately
+	
+	    if(window.location.hash){
+	        filter_by_tag(window.location.hash.slice(1));
+	    }
+	}(); 
+	
+	// Bootstrap Popover Plugin
+	// ------------------------
+	$(".modal-btn").nextSibling().modal();
+	</script>
+
+
+	<!--  -----------------------
+		Social Plugins
+	------------------------  -->
+	<!-- Pinterest -->
+	<script type="text/javascript" src="http://assets.pinterest.com/js/pinit.js"></script>
+	<!-- Twitter -->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+	</script>
+	<!-- Facebook -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+{% endblock %}
+
+{% block content %}
+	<div class="row">
+		<div class="blogroll span9">
+		{%- block blog_content %}
+		{%- endblock %}
+		</div><!-- end blogroll -->
+
+		<div id="sidebar" class="span3">
+			<h4>Tags</h4>
+		    <ul class="unstyled">
+		    
+		    {% for tag in site.tags|sort %}
+		        <li class="inline"><small>{{ tag_link(tag, tag) }}</small></li>
+		    {% endfor %} 
+		    	<li>&nbsp;</li>
+		    	<li><small><a href="/blog.html">Show All</a></small></li>
+		    </ul>			
+			<hr>
+			<h4>About Elle</h4>
+			<p><small>Call me Elle. I'm an interior designer, New Yorker and water slide fanatic.  Design is my passion and New York City is my inspiration.  As a young designer I quickly became frustrated as I realized that most designers were using the same standard brands, fabrics, and ideas.  Every track home had a track design to go with it.</small></p> 
+			<p><small>My quest to find inspired pieces takes me throughout the city and beyond with a quest to bring interesting and original design to the forefront, and ultimately to inspire new and exciting design.  Scouring boutiques and showcases. But I don't stop there--I want something with meaning. This is designicity.</small></p>
+			<hr>	
+			<h4>Follow</h4>
+			<ul class="unstyled">
+				<li><a href="http://pinterest.com/designicity"><i class="icons-social-medium pinterest"></i>designicity</a></li>
+				<li><a href="http://facebook.com/designicity"><i class="icons-social-medium facebook"></i>designicity</a></li>
+				<li><a href="http://twitter.com/designicity"><i class="icons-social-medium twitter"></i>@designicity</a></li>
+				<li><a href="http://page2rss.com/rss/47d16a58e590fb654f9b4cb46b62460b"><i class="icons-social-medium rss"></i>RSS Feed</a></li>
+				<li><a href="mailto:hello@designicity.com"><i class="icons-social-medium email"></i>hello@designicity.com</a></li>
+			</ul>
+		</div>
+
+	</div>
+{% endblock %}

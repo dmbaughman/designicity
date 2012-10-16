@@ -1,0 +1,25 @@
+{% import 'blog-base.html' as blog_base %}
+<div id="sidebar" class="span3">
+	<h4>Tags</h4>
+	<hr>
+    <ul class="unstyled">
+    
+    {% for tag in page.tags|sort %}
+        <li>{{ blog_base.tag_link(tag, tag) }}</li>
+    {% endfor %} 
+    
+       <li>{{ blog_base.tag_link('', '') }}</li> 
+    
+    </ul>			
+	<h4>About Elle</h4>
+	<p><small>Call me Elle. I'm an interior designer, New Yorker and water slide fanatic.  Design is my passion and New York City is my inspiration.  As a young designer I quickly became frustrated as I realized that most designers were using the same standard brands, fabrics, and ideas.  Every track home had a track design to go with it.</small></p> 
+	<p><small>My quest to find inspired pieces takes me throughout the city and beyond with a quest to bring interesting and original design to the forefront, and ultimately to inspire new and exciting design.  Scouring boutiques and showcases. But I don't stop there--I want something with meaning. This is designicity.</small></p>
+	<hr>	
+	<h4>Follow</h4>
+	<ul class="unstyled">
+		<li><a href="http://pinterest.com/designicity"><i class="icons-social-medium pinterest"></i>designicity</a></li>
+		<li><a href="http://facebook.com/designicity"><i class="icons-social-medium facebook"></i>designicity</a></li>
+		<li><a href="http://twitter.com/designicity"><i class="icons-social-medium twitter"></i>@designicity</a></li>
+		<li><a href="mailto:hello@designicity.com"><i class="icons-social-medium email"></i>hello@designicity.com</a></li>
+	</ul>
+</div>
