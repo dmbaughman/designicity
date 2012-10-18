@@ -1,15 +1,15 @@
 title: 360 Degrees of Design
-date: 2012-10-04
+name: Touch
+date: 2012-10-16
 category: [blog]
 tags: [Chest of Drawers, Bedroom]
 img: /img/touch-drawers.jpg
 img_alt: Beautiful Portugese-designed chest of drawers
 moar_img: [/img/touch-drawers-angle.jpg]
-width: col3
-block: col2
+width: col2
+block: col1
 ---
 It's possible that I may have touched a very famous painting at one point in my life while at a museum in Amsterdam.
----
-The thick imposto was so tangible that before I knew it my finger was reaching out for it.  Shamefully, I do not regret it.  
+The thick imposto was so tangible that before I knew it my finger was reaching out for it.  Shamefully, I do not regret it.  For this reason I am enamored by this chest of drawers, fittingly called Touch, as the curvature is so tangible.  
 
-For this reason I am enamored by this chest of drawers, fittingly called Touch, as the curvature is so tangible.  This piece was found in Portugal and reflects their beautiful workmanship.  Sometimes it takes an inspiring piece, like this chest of drawers, to encourage a new way of using a piece furniture.  Instead of shoving your furniture against a wall as if it's being called to attention, a piece like this, that is interesting from all sides can evoke a refreshing use of space.  Touch away. 
+This piece was found in Portugal and reflects the <span class="standout">beautiful workmanship</span> they are known for.  Sometimes it takes an inspiring object, like this chest of drawers, to encourage a new way of using a piece furniture.  Instead of shoving your furniture against a wall as if it's being held hostage, a piece like this that is <span class="standout">interesting from all sides</span> can evoke a refreshing use of space.  Touch away. 

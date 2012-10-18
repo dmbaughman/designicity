@@ -1,5 +1,6 @@
 title: Aesthetically Comfortable
-date: 2012-06-12
+name: Minimalist Bath Tub
+date: 2012-06-10
 category: [blog]
 tags: [Modern, Bath Tub, Bathroom]
 img: /img/bath-tub.jpg

@@ -1,9 +1,10 @@
 title: Upholstered Perfection
-date: 2012-06-12
+name: Naula Sofa
+date: 2012-10-17
 category: [blog]
 tags: [Sofa, Living Room, Family Room, Seating, Upholstery]
-img: /img/hudson-sofa-naula.jpg
-img_alt: 
+img: /img/sofa-naula.jpg
+img_alt: []
 width: col3
 ---
 Aristotle described the golden mean as the desirable middle between two extremes, one of excess and the other of deficiency.  This <span class="standout">perfect balance</span> is difficult to find but I think this sofa is pretty close.
