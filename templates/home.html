@@ -5,40 +5,39 @@
     <script src="/js/jQuery.BlackAndWhite.min.js"></script>
     <script type="text/javascript">
 		$(window).load(function(){
-		    $('.bwWrapper').BlackAndWhite({
-		        hoverEffect : true, // default true
-		        // set the path to BnWWorker.js for a superfast implementation
-		        webworkerPath : false,
-		        // for the images with a fluid width and height 
-		        responsive:true,
-		        speed: 200
-		    });
+		    if (!Modernizr.touch) {
+			    $('.bwWrapper').BlackAndWhite({
+			        hoverEffect : true, // default true
+			        // set the path to BnWWorker.js for a superfast implementation
+			        webworkerPath : false,
+			        // for the images with a fluid width and height 
+			        responsive:true,
+			        speed: 200
+			    });
+		    }		    
 		});
     </script>    
     <script src="/js/jquery.imagesloaded.min.js"></script>
     <script>
 		// Initialize the Masonry magic: http://masonry.desandro.com
 		$(document).ready(function() {
-			var $gallery = $('.gallery');
-			$gallery.imagesLoaded(function(){
-			  $gallery.masonry({
-			    itemSelector : '.item',
-			    columnWidth: 20,
-			    gutterWidth: 0,
-				isAnimated: true
-			  });
-			});
+		    if (!Modernizr.touch) {
+				var $gallery = $('.gallery');
+				$gallery.imagesLoaded(function(){
+				  $gallery.masonry({
+				    itemSelector : '.item',
+				    columnWidth: 20,
+				    gutterWidth: 0,
+					isAnimated: true
+				  });
+				});
+			}
 		});
     </script>
 
 {% endblock %}
 
 {% block content %}
-<!--  <hgroup class="pagehead">
-    {%- if page.subtitle %}
-      <h2>{{ page.subtitle }}</h2>
-    {%- endif %}
-  </hgroup>-->
   {{ page.content }}
     <div class="container gallery">
 		{% for subpage in site.categories['blog']|sort(attribute='datetime', reverse=True) %}
@@ -53,12 +52,9 @@
 				</div>
 			{%- endif %}
 		{% endfor %}
-		<div class="item col1">
-			<br />
-		</div>
     </div>
 
 
 {% endblock %}
 
-{% block js_doc_ready %}{% endblock %}
+{% block bottom %}{% endblock %}

@@ -27,33 +27,34 @@
 	
 	<!-- Preload Scripts -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="/js/modernizr-2.6.2-min.js"></script>
 	
 	<script type="text/javascript">
-	
-	// Tag filtering (pre-load)
-	// ------------------------
-	function filter_by_tag(tag){
-	    /* Remove all blog posts that aren't tagged with `tag`, show
-	     * all that are. Ignore blank tag names.
-	     */
-	
-	    if(!tag == ""){
-	        $(".article").each(function(index){
-	            if( $(this).find("." + tag).length ){
-	                $(this).show();
-	            } else {
-	                $(this).hide();
-	            }
-	        });
-	    }
-	}
-	
-	function show_all(){
-	    /* Show all blog posts
-	     */
-	
-	    $(".article").show();
-	}
+		
+		// Tag filtering (pre-load)
+		// ------------------------
+		function filter_by_tag(tag){
+		    /* Remove all blog posts that aren't tagged with `tag`, show
+		     * all that are. Ignore blank tag names.
+		     */
+		
+		    if(!tag == ""){
+		        $(".article").each(function(index){
+		            if( $(this).find("." + tag).length ){
+		                $(this).show();
+		            } else {
+		                $(this).hide();
+		            }
+		        });
+		    }
+		}
+		
+		function show_all(){
+		    /* Show all blog posts
+		     */
+		
+		    $(".article").show();
+		}
 	</script>
 
 	
@@ -123,11 +124,12 @@
 					<div class="modal hide fade" id="modal-arc-table">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h3>Share  the Arc Table</h3>
+							<h3 class="hidden-phone">Share  the Arc Table</h3>
+							<h4 class="visible-phone">Share  the Arc Table</h4>
 							</div>
 							<div class="modal-body">
 							  <div class="row">
-							  	<div class="span2">
+							  	<div class="span2 hidden-phone">
 								  	<img src="/img/arc-table.jpg" alt="Bangle Table from Hudson Furniture"/>
 							  	</div>
 							  	<div class="span3">
@@ -165,11 +167,12 @@
 					<div class="modal hide fade" id="modal-buy-arc-table">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h3>Buy the Arc Table</h3>
+							<h3 class="hidden-phone">Buy  the Arc Table</h3>
+							<h4 class="visible-phone">Buy  the Arc Table</h4>
 						</div>
 						<div class="modal-body">
 						  <div class="row">
-						  	<div class="span2">
+						  	<div class="span2 hidden-phone">
 							  	<img src="/img/arc-table.jpg" alt="Bangle Table from Hudson Furniture"/>
 						  	</div>
 						  	<div class="span3">
@@ -180,7 +183,7 @@
 						  </div>
 						</div>
 						<div class="modal-footer">
-							<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+							<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 								<i class="icon-remove"></i> Close
 							</button>
 							<a class="btn btn-small btn-primary" href="mailto:hello@designicity.com?subject=Designicity%20-%20Arc Table">
@@ -393,32 +396,30 @@
 	
 	<!-- Document Ready Scripts -->
 	<script src="/js/bootstrap-modal.js"></script>    
-	<script src="/js/bootstrap-popover.js"></script>    
-	<script src="/js/bootstrap-affix.js"></script>    
 	
 	<script type="text/javascript">
-	// Tag filtering (post-load)
-	// -------------------------
-	
-	$(".tag-link").click(function(){
-	    filter_by_tag($(this).find("a").attr('class'));
-	});
-	
-	$("#sidebar #show-all").click(function(){
-	    show_all();
-	});
-	
-	var filter_on_hash = function(){
-	    // If there is a hash in the URL, filter immediately
-	
-	    if(window.location.hash){
-	        filter_by_tag(window.location.hash.slice(1));
-	    }
-	}(); 
-	
-	// Bootstrap Popover Plugin
-	// ------------------------
-	$(".modal-btn").nextSibling().modal();
+		// Tag filtering (post-load)
+		// -------------------------
+		
+		$(".tag-link").click(function(){
+		    filter_by_tag($(this).find("a").attr('class'));
+		});
+		
+		$("#sidebar #show-all").click(function(){
+		    show_all();
+		});
+		
+		var filter_on_hash = function(){
+		    // If there is a hash in the URL, filter immediately
+		
+		    if(window.location.hash){
+		        filter_by_tag(window.location.hash.slice(1));
+		    }
+		}(); 
+		
+		// Bootstrap Popover Plugin
+		// ------------------------
+		$(".modal-btn").nextSibling().modal();
 	</script>
 
 

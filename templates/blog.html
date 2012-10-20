@@ -26,11 +26,12 @@
 						<div class="modal hide fade" id="modal-{{ subpage.slug }}">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h3>Share the {{ subpage.name }}</h3>
+								<h3 class="hidden-phone">Share the {{ subpage.name }}</h3>
+								<h4 class="visible-phone">Share the {{ subpage.name }}</h4>
 								</div>
 								<div class="modal-body">
 								  <div class="row">
-								  	<div class="span2">
+								  	<div class="span2 hidden-phone">
 									  	<img src="{{ subpage.img }}" alt="{{ subpage.img_alt }}"/>
 								  	</div>
 								  	<div class="span3">
@@ -44,15 +45,16 @@
 								<div class="span4 pull-left">
 								    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.dmbaughman.com{{ subpage.url }}&media=http%3A%2F%2Fdesignicity.dmbaughman.com{{ subpage.img }}&description=http%3A%2F%2Fdesignicity.dmbaughman.com{{ subpage.img_alt }}"
 								    		class="pin-it-button" 
-								    		count-layout="horizontal">
+								    		count-layout="none">
 								    	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
 								    </a>
 									<a href="https://twitter.com/share" class="twitter-share-button" 
 											data-url="http://designicity.dmbaughman.com{{ subpage.url }}" 
 											data-text="{{ subpage.img_alt }}" 
 											data-related="designicity" 
+											data-count="none" 
 											data-dnt="true">Tweet
-									</a>	
+									</a>
 									<div class="fb-like" data-href="http://designicity.dmbaughman.com" 
 											data-send="false" 
 											data-layout="button_count" 
@@ -60,7 +62,7 @@
 											data-show-faces="true">
 									</div>								    
 								</div>
-								<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+								<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 									<i class="icon-remove"></i> Close
 								</button>
 							</div>
@@ -69,11 +71,12 @@
 					<div class="modal hide fade" id="modal-buy-{{ subpage.slug }}">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h3>Buy the {{ subpage.name }}</h3>
+							<h3 class="hidden-phone">Buy the {{ subpage.name }}</h3>
+							<h4 class="visible-phone">Buy the {{ subpage.name }}</h4>						
 						</div>
 						<div class="modal-body">
 						  <div class="row">
-						  	<div class="span2">
+						  	<div class="span2 hidden-phone">
 							  	<img src="{{ subpage.img }}" alt="{{ subpage.img_alt }}"/>
 						  	</div>
 						  	<div class="span3">
@@ -84,7 +87,7 @@
 						  </div>
 						</div>
 						<div class="modal-footer">
-							<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+							<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 								<i class="icon-remove"></i> Close
 							</button>
 							<a class="btn btn-small btn-primary" href="mailto:hello@designicity.com?subject=Designicity%20-%20{{ subpage.name }}">

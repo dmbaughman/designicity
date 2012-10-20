@@ -60,19 +60,13 @@
 	width: 580px;
 }
 
-/*.height1 {
-	height: 140px;
-}
-.height2 {
-	height:	300px;
-}
-.height3 {
-	height:	460px;
-}*/
-
 .color-block {
 	background: @medTeal;
 	display: block;
+	@media (max-width: 767px) {
+		display: none;
+		margin: 0;
+	}
 }
 
 
@@ -167,7 +161,7 @@
 	font-size: 12px;
 	position: fixed;
 	width: 100%;	
-	p {
+	p, ul {
 		margin: 0;
 	}
 }
@@ -175,6 +169,16 @@
 // -----------------------
 // Social Stuffs
 // ----------------------- 
+
+/*@media (max-width: 767px) {*/
+	.modal-footer {
+		iframe {
+			margin-right: 15px;
+		}
+	}
+/*}*/
+
+
 
 .fb-like {
 	top: -3px;

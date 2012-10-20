@@ -27,33 +27,34 @@
 	
 	<!-- Preload Scripts -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="/js/modernizr-2.6.2-min.js"></script>
 	
 	<script type="text/javascript">
-	
-	// Tag filtering (pre-load)
-	// ------------------------
-	function filter_by_tag(tag){
-	    /* Remove all blog posts that aren't tagged with `tag`, show
-	     * all that are. Ignore blank tag names.
-	     */
-	
-	    if(!tag == ""){
-	        $(".article").each(function(index){
-	            if( $(this).find("." + tag).length ){
-	                $(this).show();
-	            } else {
-	                $(this).hide();
-	            }
-	        });
-	    }
-	}
-	
-	function show_all(){
-	    /* Show all blog posts
-	     */
-	
-	    $(".article").show();
-	}
+		
+		// Tag filtering (pre-load)
+		// ------------------------
+		function filter_by_tag(tag){
+		    /* Remove all blog posts that aren't tagged with `tag`, show
+		     * all that are. Ignore blank tag names.
+		     */
+		
+		    if(!tag == ""){
+		        $(".article").each(function(index){
+		            if( $(this).find("." + tag).length ){
+		                $(this).show();
+		            } else {
+		                $(this).hide();
+		            }
+		        });
+		    }
+		}
+		
+		function show_all(){
+		    /* Show all blog posts
+		     */
+		
+		    $(".article").show();
+		}
 	</script>
 
 	
@@ -150,11 +151,12 @@
 						<div class="modal hide fade" id="modal-naula-sofa">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h3>Share the Naula Sofa</h3>
+								<h3 class="hidden-phone">Share the Naula Sofa</h3>
+								<h4 class="visible-phone">Share the Naula Sofa</h4>
 								</div>
 								<div class="modal-body">
 								  <div class="row">
-								  	<div class="span2">
+								  	<div class="span2 hidden-phone">
 									  	<img src="/img/sofa-naula.jpg" alt="[]"/>
 								  	</div>
 								  	<div class="span3">
@@ -168,15 +170,16 @@
 								<div class="span4 pull-left">
 								    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.dmbaughman.com/blog/naula-sofa.html&media=http%3A%2F%2Fdesignicity.dmbaughman.com/img/sofa-naula.jpg&description=http%3A%2F%2Fdesignicity.dmbaughman.com[]"
 								    		class="pin-it-button" 
-								    		count-layout="horizontal">
+								    		count-layout="none">
 								    	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
 								    </a>
 									<a href="https://twitter.com/share" class="twitter-share-button" 
 											data-url="http://designicity.dmbaughman.com/blog/naula-sofa.html" 
 											data-text="[]" 
 											data-related="designicity" 
+											data-count="none" 
 											data-dnt="true">Tweet
-									</a>	
+									</a>
 									<div class="fb-like" data-href="http://designicity.dmbaughman.com" 
 											data-send="false" 
 											data-layout="button_count" 
@@ -184,7 +187,7 @@
 											data-show-faces="true">
 									</div>								    
 								</div>
-								<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+								<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 									<i class="icon-remove"></i> Close
 								</button>
 							</div>
@@ -193,11 +196,12 @@
 					<div class="modal hide fade" id="modal-buy-naula-sofa">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h3>Buy the Naula Sofa</h3>
+							<h3 class="hidden-phone">Buy the Naula Sofa</h3>
+							<h4 class="visible-phone">Buy the Naula Sofa</h4>						
 						</div>
 						<div class="modal-body">
 						  <div class="row">
-						  	<div class="span2">
+						  	<div class="span2 hidden-phone">
 							  	<img src="/img/sofa-naula.jpg" alt="[]"/>
 						  	</div>
 						  	<div class="span3">
@@ -208,7 +212,7 @@
 						  </div>
 						</div>
 						<div class="modal-footer">
-							<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+							<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 								<i class="icon-remove"></i> Close
 							</button>
 							<a class="btn btn-small btn-primary" href="mailto:hello@designicity.com?subject=Designicity%20-%20Naula Sofa">
@@ -268,11 +272,12 @@ The thick imposto was so tangible that ...
 						<div class="modal hide fade" id="modal-touch">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h3>Share the Touch</h3>
+								<h3 class="hidden-phone">Share the Touch</h3>
+								<h4 class="visible-phone">Share the Touch</h4>
 								</div>
 								<div class="modal-body">
 								  <div class="row">
-								  	<div class="span2">
+								  	<div class="span2 hidden-phone">
 									  	<img src="/img/touch-drawers.jpg" alt="Beautiful Portugese-designed chest of drawers"/>
 								  	</div>
 								  	<div class="span3">
@@ -286,15 +291,16 @@ The thick imposto was so tangible that ...
 								<div class="span4 pull-left">
 								    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.dmbaughman.com/blog/touch.html&media=http%3A%2F%2Fdesignicity.dmbaughman.com/img/touch-drawers.jpg&description=http%3A%2F%2Fdesignicity.dmbaughman.comBeautiful Portugese-designed chest of drawers"
 								    		class="pin-it-button" 
-								    		count-layout="horizontal">
+								    		count-layout="none">
 								    	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
 								    </a>
 									<a href="https://twitter.com/share" class="twitter-share-button" 
 											data-url="http://designicity.dmbaughman.com/blog/touch.html" 
 											data-text="Beautiful Portugese-designed chest of drawers" 
 											data-related="designicity" 
+											data-count="none" 
 											data-dnt="true">Tweet
-									</a>	
+									</a>
 									<div class="fb-like" data-href="http://designicity.dmbaughman.com" 
 											data-send="false" 
 											data-layout="button_count" 
@@ -302,7 +308,7 @@ The thick imposto was so tangible that ...
 											data-show-faces="true">
 									</div>								    
 								</div>
-								<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+								<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 									<i class="icon-remove"></i> Close
 								</button>
 							</div>
@@ -311,11 +317,12 @@ The thick imposto was so tangible that ...
 					<div class="modal hide fade" id="modal-buy-touch">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h3>Buy the Touch</h3>
+							<h3 class="hidden-phone">Buy the Touch</h3>
+							<h4 class="visible-phone">Buy the Touch</h4>						
 						</div>
 						<div class="modal-body">
 						  <div class="row">
-						  	<div class="span2">
+						  	<div class="span2 hidden-phone">
 							  	<img src="/img/touch-drawers.jpg" alt="Beautiful Portugese-designed chest of drawers"/>
 						  	</div>
 						  	<div class="span3">
@@ -326,7 +333,7 @@ The thick imposto was so tangible that ...
 						  </div>
 						</div>
 						<div class="modal-footer">
-							<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+							<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 								<i class="icon-remove"></i> Close
 							</button>
 							<a class="btn btn-small btn-primary" href="mailto:hello@designicity.com?subject=Designicity%20-%20Touch">
@@ -377,11 +384,12 @@ The thick imposto was so tangible that ...
 						<div class="modal hide fade" id="modal-nickel-dragon">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h3>Share the Nickel Dragon</h3>
+								<h3 class="hidden-phone">Share the Nickel Dragon</h3>
+								<h4 class="visible-phone">Share the Nickel Dragon</h4>
 								</div>
 								<div class="modal-body">
 								  <div class="row">
-								  	<div class="span2">
+								  	<div class="span2 hidden-phone">
 									  	<img src="/img/nickel-dragon.jpg" alt="Unique and elegant hanging light fixture"/>
 								  	</div>
 								  	<div class="span3">
@@ -395,15 +403,16 @@ The thick imposto was so tangible that ...
 								<div class="span4 pull-left">
 								    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.dmbaughman.com/blog/nickel-dragon.html&media=http%3A%2F%2Fdesignicity.dmbaughman.com/img/nickel-dragon.jpg&description=http%3A%2F%2Fdesignicity.dmbaughman.comUnique and elegant hanging light fixture"
 								    		class="pin-it-button" 
-								    		count-layout="horizontal">
+								    		count-layout="none">
 								    	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
 								    </a>
 									<a href="https://twitter.com/share" class="twitter-share-button" 
 											data-url="http://designicity.dmbaughman.com/blog/nickel-dragon.html" 
 											data-text="Unique and elegant hanging light fixture" 
 											data-related="designicity" 
+											data-count="none" 
 											data-dnt="true">Tweet
-									</a>	
+									</a>
 									<div class="fb-like" data-href="http://designicity.dmbaughman.com" 
 											data-send="false" 
 											data-layout="button_count" 
@@ -411,7 +420,7 @@ The thick imposto was so tangible that ...
 											data-show-faces="true">
 									</div>								    
 								</div>
-								<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+								<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 									<i class="icon-remove"></i> Close
 								</button>
 							</div>
@@ -420,11 +429,12 @@ The thick imposto was so tangible that ...
 					<div class="modal hide fade" id="modal-buy-nickel-dragon">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h3>Buy the Nickel Dragon</h3>
+							<h3 class="hidden-phone">Buy the Nickel Dragon</h3>
+							<h4 class="visible-phone">Buy the Nickel Dragon</h4>						
 						</div>
 						<div class="modal-body">
 						  <div class="row">
-						  	<div class="span2">
+						  	<div class="span2 hidden-phone">
 							  	<img src="/img/nickel-dragon.jpg" alt="Unique and elegant hanging light fixture"/>
 						  	</div>
 						  	<div class="span3">
@@ -435,7 +445,7 @@ The thick imposto was so tangible that ...
 						  </div>
 						</div>
 						<div class="modal-footer">
-							<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+							<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 								<i class="icon-remove"></i> Close
 							</button>
 							<a class="btn btn-small btn-primary" href="mailto:hello@designicity.com?subject=Designicity%20-%20Nickel Dragon">
@@ -494,11 +504,12 @@ The thick imposto was so tangible that ...
 						<div class="modal hide fade" id="modal-marx-console">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h3>Share the Marx Console</h3>
+								<h3 class="hidden-phone">Share the Marx Console</h3>
+								<h4 class="visible-phone">Share the Marx Console</h4>
 								</div>
 								<div class="modal-body">
 								  <div class="row">
-								  	<div class="span2">
+								  	<div class="span2 hidden-phone">
 									  	<img src="/img/marx-console.jpg" alt="Marx console table"/>
 								  	</div>
 								  	<div class="span3">
@@ -512,15 +523,16 @@ The thick imposto was so tangible that ...
 								<div class="span4 pull-left">
 								    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.dmbaughman.com/blog/marx-console.html&media=http%3A%2F%2Fdesignicity.dmbaughman.com/img/marx-console.jpg&description=http%3A%2F%2Fdesignicity.dmbaughman.comMarx console table"
 								    		class="pin-it-button" 
-								    		count-layout="horizontal">
+								    		count-layout="none">
 								    	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
 								    </a>
 									<a href="https://twitter.com/share" class="twitter-share-button" 
 											data-url="http://designicity.dmbaughman.com/blog/marx-console.html" 
 											data-text="Marx console table" 
 											data-related="designicity" 
+											data-count="none" 
 											data-dnt="true">Tweet
-									</a>	
+									</a>
 									<div class="fb-like" data-href="http://designicity.dmbaughman.com" 
 											data-send="false" 
 											data-layout="button_count" 
@@ -528,7 +540,7 @@ The thick imposto was so tangible that ...
 											data-show-faces="true">
 									</div>								    
 								</div>
-								<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+								<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 									<i class="icon-remove"></i> Close
 								</button>
 							</div>
@@ -537,11 +549,12 @@ The thick imposto was so tangible that ...
 					<div class="modal hide fade" id="modal-buy-marx-console">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h3>Buy the Marx Console</h3>
+							<h3 class="hidden-phone">Buy the Marx Console</h3>
+							<h4 class="visible-phone">Buy the Marx Console</h4>						
 						</div>
 						<div class="modal-body">
 						  <div class="row">
-						  	<div class="span2">
+						  	<div class="span2 hidden-phone">
 							  	<img src="/img/marx-console.jpg" alt="Marx console table"/>
 						  	</div>
 						  	<div class="span3">
@@ -552,7 +565,7 @@ The thick imposto was so tangible that ...
 						  </div>
 						</div>
 						<div class="modal-footer">
-							<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+							<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 								<i class="icon-remove"></i> Close
 							</button>
 							<a class="btn btn-small btn-primary" href="mailto:hello@designicity.com?subject=Designicity%20-%20Marx Console">
@@ -611,11 +624,12 @@ The thick imposto was so tangible that ...
 						<div class="modal hide fade" id="modal-atera">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h3>Share the Atera Custom Table</h3>
+								<h3 class="hidden-phone">Share the Atera Custom Table</h3>
+								<h4 class="visible-phone">Share the Atera Custom Table</h4>
 								</div>
 								<div class="modal-body">
 								  <div class="row">
-								  	<div class="span2">
+								  	<div class="span2 hidden-phone">
 									  	<img src="/img/atera-table.jpg" alt="Atera natural wood dining table"/>
 								  	</div>
 								  	<div class="span3">
@@ -629,15 +643,16 @@ The thick imposto was so tangible that ...
 								<div class="span4 pull-left">
 								    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.dmbaughman.com/blog/atera.html&media=http%3A%2F%2Fdesignicity.dmbaughman.com/img/atera-table.jpg&description=http%3A%2F%2Fdesignicity.dmbaughman.comAtera natural wood dining table"
 								    		class="pin-it-button" 
-								    		count-layout="horizontal">
+								    		count-layout="none">
 								    	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
 								    </a>
 									<a href="https://twitter.com/share" class="twitter-share-button" 
 											data-url="http://designicity.dmbaughman.com/blog/atera.html" 
 											data-text="Atera natural wood dining table" 
 											data-related="designicity" 
+											data-count="none" 
 											data-dnt="true">Tweet
-									</a>	
+									</a>
 									<div class="fb-like" data-href="http://designicity.dmbaughman.com" 
 											data-send="false" 
 											data-layout="button_count" 
@@ -645,7 +660,7 @@ The thick imposto was so tangible that ...
 											data-show-faces="true">
 									</div>								    
 								</div>
-								<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+								<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 									<i class="icon-remove"></i> Close
 								</button>
 							</div>
@@ -654,11 +669,12 @@ The thick imposto was so tangible that ...
 					<div class="modal hide fade" id="modal-buy-atera">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h3>Buy the Atera Custom Table</h3>
+							<h3 class="hidden-phone">Buy the Atera Custom Table</h3>
+							<h4 class="visible-phone">Buy the Atera Custom Table</h4>						
 						</div>
 						<div class="modal-body">
 						  <div class="row">
-						  	<div class="span2">
+						  	<div class="span2 hidden-phone">
 							  	<img src="/img/atera-table.jpg" alt="Atera natural wood dining table"/>
 						  	</div>
 						  	<div class="span3">
@@ -669,7 +685,7 @@ The thick imposto was so tangible that ...
 						  </div>
 						</div>
 						<div class="modal-footer">
-							<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+							<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 								<i class="icon-remove"></i> Close
 							</button>
 							<a class="btn btn-small btn-primary" href="mailto:hello@designicity.com?subject=Designicity%20-%20Atera Custom Table">
@@ -736,11 +752,12 @@ The thick imposto was so tangible that ...
 						<div class="modal hide fade" id="modal-night-tables">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h3>Share the Hanging Night Table</h3>
+								<h3 class="hidden-phone">Share the Hanging Night Table</h3>
+								<h4 class="visible-phone">Share the Hanging Night Table</h4>
 								</div>
 								<div class="modal-body">
 								  <div class="row">
-								  	<div class="span2">
+								  	<div class="span2 hidden-phone">
 									  	<img src="/img/hanging-table.jpg" alt="Arrow Table"/>
 								  	</div>
 								  	<div class="span3">
@@ -754,15 +771,16 @@ The thick imposto was so tangible that ...
 								<div class="span4 pull-left">
 								    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.dmbaughman.com/blog/night-tables.html&media=http%3A%2F%2Fdesignicity.dmbaughman.com/img/hanging-table.jpg&description=http%3A%2F%2Fdesignicity.dmbaughman.comArrow Table"
 								    		class="pin-it-button" 
-								    		count-layout="horizontal">
+								    		count-layout="none">
 								    	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
 								    </a>
 									<a href="https://twitter.com/share" class="twitter-share-button" 
 											data-url="http://designicity.dmbaughman.com/blog/night-tables.html" 
 											data-text="Arrow Table" 
 											data-related="designicity" 
+											data-count="none" 
 											data-dnt="true">Tweet
-									</a>	
+									</a>
 									<div class="fb-like" data-href="http://designicity.dmbaughman.com" 
 											data-send="false" 
 											data-layout="button_count" 
@@ -770,7 +788,7 @@ The thick imposto was so tangible that ...
 											data-show-faces="true">
 									</div>								    
 								</div>
-								<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+								<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 									<i class="icon-remove"></i> Close
 								</button>
 							</div>
@@ -779,11 +797,12 @@ The thick imposto was so tangible that ...
 					<div class="modal hide fade" id="modal-buy-night-tables">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h3>Buy the Hanging Night Table</h3>
+							<h3 class="hidden-phone">Buy the Hanging Night Table</h3>
+							<h4 class="visible-phone">Buy the Hanging Night Table</h4>						
 						</div>
 						<div class="modal-body">
 						  <div class="row">
-						  	<div class="span2">
+						  	<div class="span2 hidden-phone">
 							  	<img src="/img/hanging-table.jpg" alt="Arrow Table"/>
 						  	</div>
 						  	<div class="span3">
@@ -794,7 +813,7 @@ The thick imposto was so tangible that ...
 						  </div>
 						</div>
 						<div class="modal-footer">
-							<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+							<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 								<i class="icon-remove"></i> Close
 							</button>
 							<a class="btn btn-small btn-primary" href="mailto:hello@designicity.com?subject=Designicity%20-%20Hanging Night Table">
@@ -853,11 +872,12 @@ The thick imposto was so tangible that ...
 						<div class="modal hide fade" id="modal-curve">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h3>Share the Curve Chair</h3>
+								<h3 class="hidden-phone">Share the Curve Chair</h3>
+								<h4 class="visible-phone">Share the Curve Chair</h4>
 								</div>
 								<div class="modal-body">
 								  <div class="row">
-								  	<div class="span2">
+								  	<div class="span2 hidden-phone">
 									  	<img src="/img/curve-razortooth.jpg" alt="Bold and Unique Curved Metal Chair"/>
 								  	</div>
 								  	<div class="span3">
@@ -871,15 +891,16 @@ The thick imposto was so tangible that ...
 								<div class="span4 pull-left">
 								    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.dmbaughman.com/blog/curve.html&media=http%3A%2F%2Fdesignicity.dmbaughman.com/img/curve-razortooth.jpg&description=http%3A%2F%2Fdesignicity.dmbaughman.comBold and Unique Curved Metal Chair"
 								    		class="pin-it-button" 
-								    		count-layout="horizontal">
+								    		count-layout="none">
 								    	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
 								    </a>
 									<a href="https://twitter.com/share" class="twitter-share-button" 
 											data-url="http://designicity.dmbaughman.com/blog/curve.html" 
 											data-text="Bold and Unique Curved Metal Chair" 
 											data-related="designicity" 
+											data-count="none" 
 											data-dnt="true">Tweet
-									</a>	
+									</a>
 									<div class="fb-like" data-href="http://designicity.dmbaughman.com" 
 											data-send="false" 
 											data-layout="button_count" 
@@ -887,7 +908,7 @@ The thick imposto was so tangible that ...
 											data-show-faces="true">
 									</div>								    
 								</div>
-								<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+								<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 									<i class="icon-remove"></i> Close
 								</button>
 							</div>
@@ -896,11 +917,12 @@ The thick imposto was so tangible that ...
 					<div class="modal hide fade" id="modal-buy-curve">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h3>Buy the Curve Chair</h3>
+							<h3 class="hidden-phone">Buy the Curve Chair</h3>
+							<h4 class="visible-phone">Buy the Curve Chair</h4>						
 						</div>
 						<div class="modal-body">
 						  <div class="row">
-						  	<div class="span2">
+						  	<div class="span2 hidden-phone">
 							  	<img src="/img/curve-razortooth.jpg" alt="Bold and Unique Curved Metal Chair"/>
 						  	</div>
 						  	<div class="span3">
@@ -911,7 +933,7 @@ The thick imposto was so tangible that ...
 						  </div>
 						</div>
 						<div class="modal-footer">
-							<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+							<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 								<i class="icon-remove"></i> Close
 							</button>
 							<a class="btn btn-small btn-primary" href="mailto:hello@designicity.com?subject=Designicity%20-%20Curve Chair">
@@ -962,11 +984,12 @@ The thick imposto was so tangible that ...
 						<div class="modal hide fade" id="modal-cumberland">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h3>Share the Cumberland Light Fixture</h3>
+								<h3 class="hidden-phone">Share the Cumberland Light Fixture</h3>
+								<h4 class="visible-phone">Share the Cumberland Light Fixture</h4>
 								</div>
 								<div class="modal-body">
 								  <div class="row">
-								  	<div class="span2">
+								  	<div class="span2 hidden-phone">
 									  	<img src="/img/cumberland-dunn-lamps.jpg" alt="Gray glass hanging light fixtures"/>
 								  	</div>
 								  	<div class="span3">
@@ -980,15 +1003,16 @@ The thick imposto was so tangible that ...
 								<div class="span4 pull-left">
 								    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.dmbaughman.com/blog/cumberland.html&media=http%3A%2F%2Fdesignicity.dmbaughman.com/img/cumberland-dunn-lamps.jpg&description=http%3A%2F%2Fdesignicity.dmbaughman.comGray glass hanging light fixtures"
 								    		class="pin-it-button" 
-								    		count-layout="horizontal">
+								    		count-layout="none">
 								    	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
 								    </a>
 									<a href="https://twitter.com/share" class="twitter-share-button" 
 											data-url="http://designicity.dmbaughman.com/blog/cumberland.html" 
 											data-text="Gray glass hanging light fixtures" 
 											data-related="designicity" 
+											data-count="none" 
 											data-dnt="true">Tweet
-									</a>	
+									</a>
 									<div class="fb-like" data-href="http://designicity.dmbaughman.com" 
 											data-send="false" 
 											data-layout="button_count" 
@@ -996,7 +1020,7 @@ The thick imposto was so tangible that ...
 											data-show-faces="true">
 									</div>								    
 								</div>
-								<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+								<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 									<i class="icon-remove"></i> Close
 								</button>
 							</div>
@@ -1005,11 +1029,12 @@ The thick imposto was so tangible that ...
 					<div class="modal hide fade" id="modal-buy-cumberland">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h3>Buy the Cumberland Light Fixture</h3>
+							<h3 class="hidden-phone">Buy the Cumberland Light Fixture</h3>
+							<h4 class="visible-phone">Buy the Cumberland Light Fixture</h4>						
 						</div>
 						<div class="modal-body">
 						  <div class="row">
-						  	<div class="span2">
+						  	<div class="span2 hidden-phone">
 							  	<img src="/img/cumberland-dunn-lamps.jpg" alt="Gray glass hanging light fixtures"/>
 						  	</div>
 						  	<div class="span3">
@@ -1020,7 +1045,7 @@ The thick imposto was so tangible that ...
 						  </div>
 						</div>
 						<div class="modal-footer">
-							<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+							<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 								<i class="icon-remove"></i> Close
 							</button>
 							<a class="btn btn-small btn-primary" href="mailto:hello@designicity.com?subject=Designicity%20-%20Cumberland Light Fixture">
@@ -1079,11 +1104,12 @@ The thick imposto was so tangible that ...
 						<div class="modal hide fade" id="modal-arc-table">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h3>Share the Arc Table</h3>
+								<h3 class="hidden-phone">Share the Arc Table</h3>
+								<h4 class="visible-phone">Share the Arc Table</h4>
 								</div>
 								<div class="modal-body">
 								  <div class="row">
-								  	<div class="span2">
+								  	<div class="span2 hidden-phone">
 									  	<img src="/img/arc-table.jpg" alt="Bangle Table from Hudson Furniture"/>
 								  	</div>
 								  	<div class="span3">
@@ -1097,15 +1123,16 @@ The thick imposto was so tangible that ...
 								<div class="span4 pull-left">
 								    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.dmbaughman.com/blog/arc-table.html&media=http%3A%2F%2Fdesignicity.dmbaughman.com/img/arc-table.jpg&description=http%3A%2F%2Fdesignicity.dmbaughman.comBangle Table from Hudson Furniture"
 								    		class="pin-it-button" 
-								    		count-layout="horizontal">
+								    		count-layout="none">
 								    	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
 								    </a>
 									<a href="https://twitter.com/share" class="twitter-share-button" 
 											data-url="http://designicity.dmbaughman.com/blog/arc-table.html" 
 											data-text="Bangle Table from Hudson Furniture" 
 											data-related="designicity" 
+											data-count="none" 
 											data-dnt="true">Tweet
-									</a>	
+									</a>
 									<div class="fb-like" data-href="http://designicity.dmbaughman.com" 
 											data-send="false" 
 											data-layout="button_count" 
@@ -1113,7 +1140,7 @@ The thick imposto was so tangible that ...
 											data-show-faces="true">
 									</div>								    
 								</div>
-								<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+								<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 									<i class="icon-remove"></i> Close
 								</button>
 							</div>
@@ -1122,11 +1149,12 @@ The thick imposto was so tangible that ...
 					<div class="modal hide fade" id="modal-buy-arc-table">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h3>Buy the Arc Table</h3>
+							<h3 class="hidden-phone">Buy the Arc Table</h3>
+							<h4 class="visible-phone">Buy the Arc Table</h4>						
 						</div>
 						<div class="modal-body">
 						  <div class="row">
-						  	<div class="span2">
+						  	<div class="span2 hidden-phone">
 							  	<img src="/img/arc-table.jpg" alt="Bangle Table from Hudson Furniture"/>
 						  	</div>
 						  	<div class="span3">
@@ -1137,7 +1165,7 @@ The thick imposto was so tangible that ...
 						  </div>
 						</div>
 						<div class="modal-footer">
-							<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+							<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 								<i class="icon-remove"></i> Close
 							</button>
 							<a class="btn btn-small btn-primary" href="mailto:hello@designicity.com?subject=Designicity%20-%20Arc Table">
@@ -1204,11 +1232,12 @@ The thick imposto was so tangible that ...
 						<div class="modal hide fade" id="modal-bath-tub">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h3>Share the Minimalist Bath Tub</h3>
+								<h3 class="hidden-phone">Share the Minimalist Bath Tub</h3>
+								<h4 class="visible-phone">Share the Minimalist Bath Tub</h4>
 								</div>
 								<div class="modal-body">
 								  <div class="row">
-								  	<div class="span2">
+								  	<div class="span2 hidden-phone">
 									  	<img src="/img/bath-tub.jpg" alt="Modern and minimalist bath tub"/>
 								  	</div>
 								  	<div class="span3">
@@ -1222,15 +1251,16 @@ The thick imposto was so tangible that ...
 								<div class="span4 pull-left">
 								    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.dmbaughman.com/blog/bath-tub.html&media=http%3A%2F%2Fdesignicity.dmbaughman.com/img/bath-tub.jpg&description=http%3A%2F%2Fdesignicity.dmbaughman.comModern and minimalist bath tub"
 								    		class="pin-it-button" 
-								    		count-layout="horizontal">
+								    		count-layout="none">
 								    	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
 								    </a>
 									<a href="https://twitter.com/share" class="twitter-share-button" 
 											data-url="http://designicity.dmbaughman.com/blog/bath-tub.html" 
 											data-text="Modern and minimalist bath tub" 
 											data-related="designicity" 
+											data-count="none" 
 											data-dnt="true">Tweet
-									</a>	
+									</a>
 									<div class="fb-like" data-href="http://designicity.dmbaughman.com" 
 											data-send="false" 
 											data-layout="button_count" 
@@ -1238,7 +1268,7 @@ The thick imposto was so tangible that ...
 											data-show-faces="true">
 									</div>								    
 								</div>
-								<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+								<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 									<i class="icon-remove"></i> Close
 								</button>
 							</div>
@@ -1247,11 +1277,12 @@ The thick imposto was so tangible that ...
 					<div class="modal hide fade" id="modal-buy-bath-tub">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h3>Buy the Minimalist Bath Tub</h3>
+							<h3 class="hidden-phone">Buy the Minimalist Bath Tub</h3>
+							<h4 class="visible-phone">Buy the Minimalist Bath Tub</h4>						
 						</div>
 						<div class="modal-body">
 						  <div class="row">
-						  	<div class="span2">
+						  	<div class="span2 hidden-phone">
 							  	<img src="/img/bath-tub.jpg" alt="Modern and minimalist bath tub"/>
 						  	</div>
 						  	<div class="span3">
@@ -1262,7 +1293,7 @@ The thick imposto was so tangible that ...
 						  </div>
 						</div>
 						<div class="modal-footer">
-							<button class="btn btn-small" data-dismiss="modal" aria-hidden="true">
+							<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
 								<i class="icon-remove"></i> Close
 							</button>
 							<a class="btn btn-small btn-primary" href="mailto:hello@designicity.com?subject=Designicity%20-%20Minimalist Bath Tub">
@@ -1476,32 +1507,30 @@ The thick imposto was so tangible that ...
 	
 	<!-- Document Ready Scripts -->
 	<script src="/js/bootstrap-modal.js"></script>    
-	<script src="/js/bootstrap-popover.js"></script>    
-	<script src="/js/bootstrap-affix.js"></script>    
 	
 	<script type="text/javascript">
-	// Tag filtering (post-load)
-	// -------------------------
-	
-	$(".tag-link").click(function(){
-	    filter_by_tag($(this).find("a").attr('class'));
-	});
-	
-	$("#sidebar #show-all").click(function(){
-	    show_all();
-	});
-	
-	var filter_on_hash = function(){
-	    // If there is a hash in the URL, filter immediately
-	
-	    if(window.location.hash){
-	        filter_by_tag(window.location.hash.slice(1));
-	    }
-	}(); 
-	
-	// Bootstrap Popover Plugin
-	// ------------------------
-	$(".modal-btn").nextSibling().modal();
+		// Tag filtering (post-load)
+		// -------------------------
+		
+		$(".tag-link").click(function(){
+		    filter_by_tag($(this).find("a").attr('class'));
+		});
+		
+		$("#sidebar #show-all").click(function(){
+		    show_all();
+		});
+		
+		var filter_on_hash = function(){
+		    // If there is a hash in the URL, filter immediately
+		
+		    if(window.location.hash){
+		        filter_by_tag(window.location.hash.slice(1));
+		    }
+		}(); 
+		
+		// Bootstrap Popover Plugin
+		// ------------------------
+		$(".modal-btn").nextSibling().modal();
 	</script>
 
 

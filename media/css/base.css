@@ -812,7 +812,7 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .col2{min-height:220px;width:340px;}
 .col3{min-height:140px;width:460px;}
 .col4{width:580px;}
-.color-block{background:#7edfea;display:block;}
+.color-block{background:#7edfea;display:block;}@media (max-width:767px){.color-block{display:none;margin:0;}}
 .bwWrapper{position:relative;display:block;}
 #header{margin-top:10px;margin-bottom:25px;}
 .site-logo{width:240px;}
@@ -823,7 +823,8 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .flag.noshow{position:static;visibility:hidden;}
 .blogroll .standout,.about-page .standout{color:#15c4cf;font-family:'Raleway','Century Gothic',serif;font-size:16px;}
 #sidebar p,#sidebar li{color:#555555;line-height:160%;}
-#footer{background:#222222;border-top:1px solid #555555;bottom:0;color:#999999;font-size:12px;position:fixed;width:100%;}#footer p{margin:0;}
+#footer{background:#222222;border-top:1px solid #555555;bottom:0;color:#999999;font-size:12px;position:fixed;width:100%;}#footer p,#footer ul{margin:0;}
+.modal-footer iframe{margin-right:15px;}
 .fb-like{top:-3px;}
 .icons-social-lighter,.icons-social-light,.icons-social-medium,.icons-social-dark{background:url('/img/ico/icons-social.png') no-repeat 0 0;display:inline-block;height:14px;margin:0 5px -2px 0;width:14px;}
 .icons-social-lighter.facebook{background-position:0 0;}

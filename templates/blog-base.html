@@ -47,59 +47,59 @@
 {# JavaScript to run before document loads #}
 {% block head %}
 	<script type="text/javascript">
-	
-	// Tag filtering (pre-load)
-	// ------------------------
-	function filter_by_tag(tag){
-	    /* Remove all blog posts that aren't tagged with `tag`, show
-	     * all that are. Ignore blank tag names.
-	     */
-	
-	    if(!tag == ""){
-	        $(".article").each(function(index){
-	            if( $(this).find("." + tag).length ){
-	                $(this).show();
-	            } else {
-	                $(this).hide();
-	            }
-	        });
-	    }
-	}
-	
-	function show_all(){
-	    /* Show all blog posts
-	     */
-	
-	    $(".article").show();
-	}
+		
+		// Tag filtering (pre-load)
+		// ------------------------
+		function filter_by_tag(tag){
+		    /* Remove all blog posts that aren't tagged with `tag`, show
+		     * all that are. Ignore blank tag names.
+		     */
+		
+		    if(!tag == ""){
+		        $(".article").each(function(index){
+		            if( $(this).find("." + tag).length ){
+		                $(this).show();
+		            } else {
+		                $(this).hide();
+		            }
+		        });
+		    }
+		}
+		
+		function show_all(){
+		    /* Show all blog posts
+		     */
+		
+		    $(".article").show();
+		}
 	</script>
 {% endblock %}
 
 {# JavaScript to run when document is ready #}
 {% block bottom %}
 	<script type="text/javascript">
-	// Tag filtering (post-load)
-	// -------------------------
-	
-	$(".tag-link").click(function(){
-	    filter_by_tag($(this).find("a").attr('class'));
-	});
-	
-	$("#sidebar #show-all").click(function(){
-	    show_all();
-	});
-	
-	var filter_on_hash = function(){
-	    // If there is a hash in the URL, filter immediately
-	
-	    if(window.location.hash){
-	        filter_by_tag(window.location.hash.slice(1));
-	    }
-	}(); 
-	
-	// Bootstrap Popover Plugin
-	// ------------------------
-	$(".modal-btn").nextSibling().modal();
+		// Tag filtering (post-load)
+		// -------------------------
+		
+		$(".tag-link").click(function(){
+		    filter_by_tag($(this).find("a").attr('class'));
+		});
+		
+		$("#sidebar #show-all").click(function(){
+		    show_all();
+		});
+		
+		var filter_on_hash = function(){
+		    // If there is a hash in the URL, filter immediately
+		
+		    if(window.location.hash){
+		        filter_by_tag(window.location.hash.slice(1));
+		    }
+		}(); 
+		
+		// Bootstrap Popover Plugin
+		// ------------------------
+		$(".modal-btn").nextSibling().modal();
 	</script>
 
 
