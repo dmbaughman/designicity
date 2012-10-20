@@ -806,7 +806,7 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .relative{position:relative;}
 .shadow{-webkit-box-shadow:1px 1px 4px #ccf5f9;-moz-box-shadow:1px 1px 4px #ccf5f9;box-shadow:1px 1px 4px #ccf5f9;}
 #logo img{padding-left:10px;}
-.inline{display:inline;margin-right:10px;}
+.inline{display:inline-block;margin-right:10px;}
 .item{margin:0 20px 20px 0;float:left;position:relative;}
 .col1{min-height:300px;width:220px;}
 .col2{min-height:220px;width:340px;}
