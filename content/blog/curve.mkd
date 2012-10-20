@@ -4,6 +4,7 @@ date: 2012-10-11
 category: [blog]
 tags: [Modern, Seating]
 img: /img/curve-razortooth.jpg
+img_prev: /img/curve-razortooth-preview.jpg
 img_alt: Bold and Unique Curved Metal Chair
 moar_img: [/img/riding-rudy.jpg]
 width: col2

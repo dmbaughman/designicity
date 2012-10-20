@@ -814,7 +814,7 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .col4{width:580px;}
 .color-block{background:#7edfea;display:block;}@media (max-width:767px){.color-block{display:none;margin:0;}}
 .bwWrapper{position:relative;display:block;}
-#header{margin-top:10px;margin-bottom:25px;}
+#header{padding-top:10px;padding-bottom:25px;}
 .site-logo{width:240px;}
 #site-nav,#mobile-nav{font-family:'Unna',Garamond,Times,serif;font-weight:100;font-size:18px;margin:20px 0;text-transform:uppercase;}
 #mobile-nav li>a{margin:0 10px 0 0;}

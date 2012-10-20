@@ -4,6 +4,7 @@ date: 2012-10-09
 category: [blog]
 tags: [Lighting]
 img: /img/cumberland-dunn-lamps.jpg
+img_prev: /img/cumberland-dunn-lamps-preview.jpg
 img_alt: Gray glass hanging light fixtures
 width: col3
 block: col3

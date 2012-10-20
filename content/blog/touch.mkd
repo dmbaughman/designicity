@@ -4,6 +4,7 @@ date: 2012-10-16
 category: [blog]
 tags: [Chest of Drawers, Bedroom]
 img: /img/touch-drawers.jpg
+img_prev: /img/touch-drawers-preview.jpg
 img_alt: Beautiful Portugese-designed chest of drawers
 moar_img: [/img/touch-drawers-angle.jpg]
 width: col2

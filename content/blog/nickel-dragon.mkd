@@ -4,6 +4,7 @@ date: 2012-10-15
 category: [blog]
 tags: [Lighting]
 img: /img/nickel-dragon.jpg
+img_prev: /img/nickel-dragon-preview.jpg
 img_alt: Unique and elegant hanging light fixture
 moar_img: [/img/black-dragon.jpg]
 width: col2

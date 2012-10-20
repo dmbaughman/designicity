@@ -4,6 +4,7 @@ date: 2012-10-08
 category: [blog]
 tags: [Table, Dining Table]
 img: /img/arc-table.jpg
+img_prev: /img/arc-table-preview.jpg
 img_alt: Bangle Table from Hudson Furniture
 width: col2
 ---

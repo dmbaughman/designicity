@@ -4,6 +4,7 @@ date: 2012-06-10
 category: [blog]
 tags: [Modern, Bath Tub, Bathroom]
 img: /img/bath-tub.jpg
+img_prev: /img/bath-tub-preview.jpg
 img_alt: Modern and minimalist bath tub
 width: col2
 ---

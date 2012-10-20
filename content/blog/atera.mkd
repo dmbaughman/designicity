@@ -4,6 +4,7 @@ date: 2012-10-13
 category: [blog]
 tags: [Table, Dining Table]
 img: /img/atera-table.jpg
+img_prev: /img/atera-table-preview.jpg
 img_alt: Atera natural wood dining table
 width: col2
 block: col1

@@ -4,7 +4,8 @@ date: 2012-10-17
 category: [blog]
 tags: [Sofa, Living Room, Family Room, Seating, Upholstery]
 img: /img/sofa-naula.jpg
-img_alt: []
+img_prev: /img/sofa-naula-preview.jpg
+img_alt: Modern upholstered sofa in rich chocolate color.
 width: col3
 ---
 Aristotle described the golden mean as the desirable middle between two extremes, one of excess and the other of deficiency.  This <span class="standout">perfect balance</span> is difficult to find but I think this sofa is pretty close.
