@@ -16,23 +16,27 @@
 {# Tag link macro #}
 {# Build a link for a tag, link to its hashed name #}
 {% macro tag_link(tag, label=None) -%}
-    <span class='tag-link'>
-        <a href='/blog.html#{{ nospace(tag) }}' class='{{ nospace(tag) }}'>
-        {% if label %}{{ label }}{% else %}{{ tag }}{% endif %}
-        </a>
-    </span>
+    {% if tag != '_nav' %}
+	    <span class='tag-link'>
+	        <a href='/blog.html#{{ nospace(tag) }}' class='{{ nospace(tag) }}'>
+	        {% if label %}{{ label }}{% else %}{{ tag }}{% endif %}
+	        </a>
+	    </span>
+    {% endif %}
 {%- endmacro %}
 
 {# Tag list macro #}
 {# Build a tag list from a set of tags #}
 {% macro tag_list(tags) -%}
     {% for tag in tags %}
-        {% if loop.length == 1 %}
-            {{ tag_link(tag) }}
-        {% elif not loop.last %}
-            {{ tag_link(tag) }},
-        {% else %}
-            and {{ tag_link(tag) }}
+        {% if tag == '_nav' %}
+	        {% if loop.length == 1 %}
+	            {{ tag_link(tag) }}
+	        {% elif not loop.last %}
+	            {{ tag_link(tag) }},
+	        {% else %}
+	            and {{ tag_link(tag) }}
+	        {% endif %}
         {% endif %}
     {% endfor %}
 {%- endmacro %}
