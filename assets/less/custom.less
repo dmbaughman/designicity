@@ -83,15 +83,15 @@
 // Header & Navs
 // ----------------------- 
 
-/*body {
-	background: #f5f5f5;
+body {
+	background: #111 url('/img/ico/bg-noise.png') repeat;
 }
 
 #header, #content {
 	background: @white;
-	border-left: 1px solid @grayLighter;
-	border-right: 1px solid @grayLighter;
-}*/
+	border-left: 1px solid @teal;
+	border-right: 1px solid @teal;
+}
 
 #header {
 	padding-top: 10px;
@@ -142,12 +142,11 @@
 	visibility: hidden;
 }
 
-.blogroll .standout, .about-page .standout {
+.entry em, .about-page em {
 	color: @teal;
-	//display: block;
 	font-family: @headingsFontFamily; /*'Petit Formal Script', cursive;*/
 	font-size: @baseFontSize + 2px;
-	//text-align: center;
+	font-style: normal;
 }
 
 // -----------------------
@@ -164,11 +163,12 @@
 }
 
 #footer {
-	background: @grayDarker;
-	border-top: 1px solid @gray;
+	background: @black;
+	/*border-top: 1px solid @grayDarker;*/
 	bottom: 0;
 	color: @grayLight;
 	font-size: 12px;
+	opacity: .9;
 	position: fixed;
 	width: 100%;	
 	p, ul {

@@ -8,4 +8,4 @@ img_prev: /img/marx-console-preview.jpg
 img_alt: Marx console table
 width: col2
 ---
-Fashion and interior design have some parallels.  That said, if you wear your Uggs with a Juicy suit (and you probably have one in every color) this post is most likely not your style.  <span class="standout">I love some edge.</span>  If my fashion sense were a piece of furniture...this would be it.  Black...love.  Gold...love.  Hardware...love.  This console is so sleek and simple and the details are subtle but strong. 
+Fashion and interior design have some parallels.  That said, if you wear your Uggs with a Juicy suit (and you probably have one in every color) this post is most likely not your style.  *I love some edge.*  If my fashion sense were a piece of furniture...this would be it.  Black...love.  Gold...love.  Hardware...love.  This console is so sleek and simple and the details are subtle but strong. 

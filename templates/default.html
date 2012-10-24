@@ -1,7 +1,7 @@
 {% extends "blog-base.html" %}
 
 {% block blog_content %}
-		<div class="row relative">
+		<div class="entry row relative">
 			<div class="span3">
 				<h3 class="span5 flag hidden-phone">{{ page.title }}</h3>
 				<h4 class="span5 flag visible-phone">{{ page.title }}</h4>
@@ -37,19 +37,19 @@
 					</div>
 					<div class="modal-footer">
 						<div class="span4 pull-left">
-						    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.dmbaughman.com{{ page.url }}&media=http%3A%2F%2Fdesignicity.dmbaughman.com{{ page.img }}&description={{ page.img_alt }}"
+						    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.com{{ page.url }}&media=http%3A%2F%2Fdesignicity.com{{ page.img }}&description={{ page.img_alt }}"
 						    		class="pin-it-button" 
 						    		count-layout="none">
 						    	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
 						    </a>
 							<a href="https://twitter.com/share" class="twitter-share-button" 
-									data-url="http://designicity.dmbaughman.com{{ page.url }}" 
+									data-url="http://designicity.com{{ page.url }}" 
 									data-text="{{ page.img_alt }}" 
 									data-related="designicity" 
 									data-count="none" 
 									data-dnt="true">Tweet
 							</a>	
-							<div class="fb-like" data-href="http://designicity.dmbaughman.com" 
+							<div class="fb-like" data-href="http://designicity.com" 
 									data-send="false" 
 									data-layout="button_count" 
 									data-width="450" 

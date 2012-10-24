@@ -43,7 +43,7 @@
 		{% for subpage in site.categories['blog']|sort(attribute='datetime', reverse=True) %}
 			<div class="item bwWrapper {{subpage.width}}">
 	    		<a href="{{ subpage.url }}">
-	    			<img class="shadow" src="{{ subpage.img_prev }}" alt="{{ subpage.img_alt }}" />
+	    			<img class="shadow" src="{{ subpage.img }}" alt="{{ subpage.img_alt }}" />
 	    		</a>
 	    		<!--h4 class="flag">{{ subpage.title }}</h4-->
 			</div>

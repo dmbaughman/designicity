@@ -16,13 +16,11 @@
 {# Tag link macro #}
 {# Build a link for a tag, link to its hashed name #}
 {% macro tag_link(tag, label=None) -%}
-    {% if tag != '_nav' %}
 	    <span class='tag-link'>
 	        <a href='/blog.html#{{ nospace(tag) }}' class='{{ nospace(tag) }}'>
 	        {% if label %}{{ label }}{% else %}{{ tag }}{% endif %}
 	        </a>
 	    </span>
-    {% endif %}
 {%- endmacro %}
 
 {# Tag list macro #}
@@ -126,7 +124,7 @@
 
 {% block content %}
 	<div class="row">
-		<div class="blogroll span9">
+		<div class="span9">
 		{%- block blog_content %}
 		{%- endblock %}
 		</div><!-- end blogroll -->
@@ -136,7 +134,9 @@
 		    <ul class="unstyled">
 		    
 		    {% for tag in site.tags|sort %}
-		        <li class="inline"><small>{{ tag_link(tag, tag) }}</small></li>
+		        {% if tag != '_nav' %} {# Ignore the _nav tags #}
+		        	<li class="inline"><small>{{ tag_link(tag, tag) }}</small></li>
+		        {% endif %}
 		    {% endfor %} 
 		    	<li>&nbsp;</li>
 		    	<li><small><a href="/blog.html">Show All</a></small></li>
@@ -152,7 +152,7 @@
 					<li><a href="http://pinterest.com/designicity"><i class="icons-social-medium pinterest"></i>designicity</a></li>
 					<li><a href="http://facebook.com/designicity"><i class="icons-social-medium facebook"></i>designicity</a></li>
 					<li><a href="http://twitter.com/designicity"><i class="icons-social-medium twitter"></i>@designicity</a></li>
-					<li><a href="http://page2rss.com/rss/47d16a58e590fb654f9b4cb46b62460b"><i class="icons-social-medium rss"></i>RSS Feed</a></li>
+					<!--li><a href="http://page2rss.com/rss/47d16a58e590fb654f9b4cb46b62460b"><i class="icons-social-medium rss"></i>RSS Feed</a></li-->
 					<li><a href="mailto:hello@designicity.com"><i class="icons-social-medium email"></i>hello@designicity.com</a></li>
 				</ul>
 				<hr>

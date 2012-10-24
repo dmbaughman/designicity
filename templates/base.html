@@ -77,7 +77,7 @@
 					<li class="inline"><a href="http://pinterest.com/designicity"><i class="icons-social-light pinterest"></i>designicity</a></li>
 					<li class="inline"><a href="http://facebook.com/designicity"><i class="icons-social-light facebook"></i>designicity</a></li>
 					<li class="inline"><a href="http://twitter.com/designicity"><i class="icons-social-light twitter"></i>@designicity</a></li>
-					<li class="inline"><a href="http://page2rss.com/rss/47d16a58e590fb654f9b4cb46b62460b"><i class="icons-social-light rss"></i>RSS</a></li>
+					<!--li class="inline"><a href="http://page2rss.com/rss/47d16a58e590fb654f9b4cb46b62460b"><i class="icons-social-light rss"></i>RSS</a></li-->
 					<li class="inline"><a href="mailto:hello@designicity.com"><i class="icons-social-light email"></i>hello@designicity.com</a></li>
 				</ul>
 
@@ -87,6 +87,19 @@
 	<!-- Document Ready Scripts -->
 	<script src="/js/bootstrap-modal.js"></script>    
 	{% block bottom %}{% endblock %}
+
+	<!-- Le Goog Analytics -->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-33868048-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
 </body>
 </html>
 

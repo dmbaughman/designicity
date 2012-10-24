@@ -9,7 +9,8 @@
 						<h3 class="span5 flag hidden-phone">{{ subpage.title }}</h3>
 						<h4 class="span5 flag visible-phone">{{ subpage.title }}</h4>
 						<h3 class="flag noshow hidden-phone">&nbsp;</h3>
-						{{ subpage.content|truncate(length=160) }}
+						{{ subpage.content|truncate(length=100) }}
+						<br>
 						<a href="{{ subpage.url }}">
 						    <!-- "Much greater than" symbol -->
 						    continue &raquo;
@@ -44,19 +45,19 @@
 							</div>
 							<div class="modal-footer">
 								<div class="span4 pull-left">
-								    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.dmbaughman.com{{ subpage.url }}&media=http%3A%2F%2Fdesignicity.dmbaughman.com{{ subpage.img }}&description={{ subpage.img_alt }}"
+								    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.com{{ subpage.url }}&media=http%3A%2F%2Fdesignicity.com{{ subpage.img }}&description={{ subpage.img_alt }}"
 								    		class="pin-it-button" 
 								    		count-layout="none">
 								    	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
 								    </a>
 									<a href="https://twitter.com/share" class="twitter-share-button" 
-											data-url="http://designicity.dmbaughman.com{{ subpage.url }}" 
+											data-url="http://designicity.com{{ subpage.url }}" 
 											data-text="{{ subpage.img_alt }}" 
 											data-related="designicity" 
 											data-count="none" 
 											data-dnt="true">Tweet
 									</a>
-									<div class="fb-like" data-href="http://designicity.dmbaughman.com" 
+									<div class="fb-like" data-href="http://designicity.com" 
 											data-send="false" 
 											data-layout="button_count" 
 											data-width="450" 
