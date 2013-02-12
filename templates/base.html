@@ -26,8 +26,8 @@
 	<link rel="stylesheet"  type="text/css" href="/css/responsive.css" />
 	
 	<!-- Preload Scripts -->
-	<script src="/js/jquery.js"></script>
-	<script src="/js/modernizr-2.6.2-min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 	{% block head %}{% endblock %}
 	
 	<title>{{ site.title }} | {{ page.title }}</title>
@@ -35,34 +35,39 @@
 <body>
 	<!-- Start #header -->
 	<div id="header" class="container padding">
-		<div class="row">
-	      <div id="logo" class="span3">
+		<div id="logo" class="pull-left">
 			<a href="/" title="designicity">
-				<img class="site-logo" src="/img/designicity-logo.png" alt="designicity" />
+			<img class="site-logo" src="/img/designicity-logo.png" alt="designicity" />
 			</a>	      
-	      </div>
-	      <div class="span6 offset3">
-		      <ul id="site-nav" class="nav nav-pills pull-right hidden-phone">
-		        {%- for nav in site.tags['_nav']|sort(attribute='nav_weight') %}
-		          {%- if nav.url == page.url %}
-		            <li class="active"><a href="{{ nav.url }}">{{ nav.title }}</a></li>
-		          {%- else %}
-		            <li><a href="{{ nav.url }}">{{ nav.title }}</a></li>
-		          {%- endif %}
-		        {%- endfor %}
-		      </ul>
-		      <ul id="mobile-nav" class="nav nav-pills visible-phone">
-		        {%- for nav in site.tags['_nav']|sort(attribute='nav_weight') %}
-		          {%- if nav.url == page.url %}
-		            <li class="active"><a href="{{ nav.url }}">{{ nav.title }}</a></li>
-		          {%- else %}
-		            <li><a href="{{ nav.url }}">{{ nav.title }}</a></li>
-		          {%- endif %}
-		        {%- endfor %}
-		      </ul>		      </div>
-	    </div>
-	</div>
-	<!-- End #header -->
+		</div>
+		<button type="button" id="nav-toggle" class="btn btn-inverse btn-navbar hidden-desktop pull-right" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>					
+		<div id="nav-desktop" class="visible-desktop">
+			<ul id="site-nav" class="nav nav-pills pull-right">
+				{%- for nav in site.tags['_nav']|sort(attribute='nav_weight') %}
+					{%- if nav.url == page.url %}
+						<li class="active"><a href="{{ nav.url }}">{{ nav.title }}</a></li>
+					{%- else %}
+						<li><a href="{{ nav.url }}">{{ nav.title }}</a></li>
+					{%- endif %}
+				{%- endfor %}
+			</ul>
+		</div>
+		<div id="nav-mobile" class="hidden-desktop nav-collapse collapse">
+			<ul id="mobile-nav" class="nav nav-pills well">
+				{%- for nav in site.tags['_nav']|sort(attribute='nav_weight') %}
+					{%- if nav.url == page.url %}
+						<li class="active"><a href="{{ nav.url }}">{{ nav.title }}</a></li>
+					{%- else %}
+						<li><a href="{{ nav.url }}">{{ nav.title }}</a></li>
+					{%- endif %}
+				{%- endfor %}
+			</ul>
+		</div>      
+	</div><!-- End #header -->
 	
 	<div id="content" class="container padding">
 	{% block content %}
@@ -85,7 +90,7 @@
 	</div>
 	
 	<!-- Document Ready Scripts -->
-	<script src="/js/bootstrap-modal.js"></script>    
+	<script src="/js/bootstrap.min.js"></script>    
 	{% block bottom %}{% endblock %}
 
 	<!-- Le Goog Analytics -->

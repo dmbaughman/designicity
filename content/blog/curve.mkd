@@ -2,7 +2,7 @@ title: Make a Statement
 name: Curve Chair
 date: 2012-10-11
 category: [blog]
-tags: [Modern, Seating]
+tags: [Modern, Seating, Metal]
 img: /img/curve-razortooth.jpg
 img_prev: /img/curve-razortooth-preview.jpg
 img_alt: Bold and Unique Curved Metal Chair

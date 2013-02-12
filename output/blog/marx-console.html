@@ -26,8 +26,8 @@
 	<link rel="stylesheet"  type="text/css" href="/css/responsive.css" />
 	
 	<!-- Preload Scripts -->
-	<script src="/js/jquery.js"></script>
-	<script src="/js/modernizr-2.6.2-min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 	
 	<script type="text/javascript">
 		
@@ -63,26 +63,31 @@
 <body>
 	<!-- Start #header -->
 	<div id="header" class="container padding">
-		<div class="row">
-	      <div id="logo" class="span3">
+		<div id="logo" class="pull-left">
 			<a href="/" title="designicity">
-				<img class="site-logo" src="/img/designicity-logo.png" alt="designicity" />
+			<img class="site-logo" src="/img/designicity-logo.png" alt="designicity" />
 			</a>	      
-	      </div>
-	      <div class="span6 offset3">
-		      <ul id="site-nav" class="nav nav-pills pull-right hidden-phone">
-		            <li><a href="/index.html">Home</a></li>
-		            <li><a href="/blog.html">Blog</a></li>
-		            <li><a href="/about.html">About</a></li>
-		      </ul>
-		      <ul id="mobile-nav" class="nav nav-pills visible-phone">
-		            <li><a href="/index.html">Home</a></li>
-		            <li><a href="/blog.html">Blog</a></li>
-		            <li><a href="/about.html">About</a></li>
-		      </ul>		      </div>
-	    </div>
-	</div>
-	<!-- End #header -->
+		</div>
+		<button type="button" id="nav-toggle" class="btn btn-inverse btn-navbar hidden-desktop pull-right" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>					
+		<div id="nav-desktop" class="visible-desktop">
+			<ul id="site-nav" class="nav nav-pills pull-right">
+						<li><a href="/index.html">Home</a></li>
+						<li><a href="/blog.html">Blog</a></li>
+						<li><a href="/about.html">About</a></li>
+			</ul>
+		</div>
+		<div id="nav-mobile" class="hidden-desktop nav-collapse collapse">
+			<ul id="mobile-nav" class="nav nav-pills well">
+						<li><a href="/index.html">Home</a></li>
+						<li><a href="/blog.html">Blog</a></li>
+						<li><a href="/about.html">About</a></li>
+			</ul>
+		</div>      
+	</div><!-- End #header -->
 	
 	<div id="content" class="container padding">
 	
@@ -210,6 +215,22 @@
 		    
 		         
 		        	<li class="inline"><small><span class='tag-link'>
+	        <a href='/blog.html#Architecture' class='Architecture'>
+	        Architecture
+	        </a>
+	    </span></small></li>
+		        
+		    
+		         
+		        	<li class="inline"><small><span class='tag-link'>
+	        <a href='/blog.html#Art' class='Art'>
+	        Art
+	        </a>
+	    </span></small></li>
+		        
+		    
+		         
+		        	<li class="inline"><small><span class='tag-link'>
 	        <a href='/blog.html#Bath-Tub' class='Bath-Tub'>
 	        Bath Tub
 	        </a>
@@ -244,6 +265,14 @@
 		        	<li class="inline"><small><span class='tag-link'>
 	        <a href='/blog.html#Chest-of-Drawers' class='Chest-of-Drawers'>
 	        Chest of Drawers
+	        </a>
+	    </span></small></li>
+		        
+		    
+		         
+		        	<li class="inline"><small><span class='tag-link'>
+	        <a href='/blog.html#Color' class='Color'>
+	        Color
 	        </a>
 	    </span></small></li>
 		        
@@ -292,6 +321,14 @@
 		        	<li class="inline"><small><span class='tag-link'>
 	        <a href='/blog.html#Living-Room' class='Living-Room'>
 	        Living Room
+	        </a>
+	    </span></small></li>
+		        
+		    
+		         
+		        	<li class="inline"><small><span class='tag-link'>
+	        <a href='/blog.html#Metal' class='Metal'>
+	        Metal
 	        </a>
 	    </span></small></li>
 		        
@@ -395,7 +432,7 @@
 	<!-- Start #footer -->
 	<div id="footer">
 			<div class="container padding">
-				<p class="hidden-phone pull-right">&copy; 2012 Designicity&nbsp;&nbsp;|&nbsp;&nbsp; Site design by <a href="http://dmbaughman.com">dmbaughman</a></p>
+				<p class="hidden-phone pull-right">&copy; 2013 Designicity&nbsp;&nbsp;|&nbsp;&nbsp; Site design by <a href="http://dmbaughman.com">dmbaughman</a></p>
 				<ul class="unstyled">
 					<li class="inline"><a href="http://pinterest.com/designicity"><i class="icons-social-light pinterest"></i>designicity</a></li>
 					<li class="inline"><a href="http://facebook.com/designicity"><i class="icons-social-light facebook"></i>designicity</a></li>
@@ -408,7 +445,7 @@
 	</div>
 	
 	<!-- Document Ready Scripts -->
-	<script src="/js/bootstrap-modal.js"></script>    
+	<script src="/js/bootstrap.min.js"></script>    
 	
 	<script type="text/javascript">
 		// Tag filtering (post-load)

@@ -26,8 +26,8 @@
 	<link rel="stylesheet"  type="text/css" href="/css/responsive.css" />
 	
 	<!-- Preload Scripts -->
-	<script src="/js/jquery.js"></script>
-	<script src="/js/modernizr-2.6.2-min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 	
 	<script type="text/javascript">
 		
@@ -63,31 +63,399 @@
 <body>
 	<!-- Start #header -->
 	<div id="header" class="container padding">
-		<div class="row">
-	      <div id="logo" class="span3">
+		<div id="logo" class="pull-left">
 			<a href="/" title="designicity">
-				<img class="site-logo" src="/img/designicity-logo.png" alt="designicity" />
+			<img class="site-logo" src="/img/designicity-logo.png" alt="designicity" />
 			</a>	      
-	      </div>
-	      <div class="span6 offset3">
-		      <ul id="site-nav" class="nav nav-pills pull-right hidden-phone">
-		            <li><a href="/index.html">Home</a></li>
-		            <li class="active"><a href="/blog.html">Blog</a></li>
-		            <li><a href="/about.html">About</a></li>
-		      </ul>
-		      <ul id="mobile-nav" class="nav nav-pills visible-phone">
-		            <li><a href="/index.html">Home</a></li>
-		            <li class="active"><a href="/blog.html">Blog</a></li>
-		            <li><a href="/about.html">About</a></li>
-		      </ul>		      </div>
-	    </div>
-	</div>
-	<!-- End #header -->
+		</div>
+		<button type="button" id="nav-toggle" class="btn btn-inverse btn-navbar hidden-desktop pull-right" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>					
+		<div id="nav-desktop" class="visible-desktop">
+			<ul id="site-nav" class="nav nav-pills pull-right">
+						<li><a href="/index.html">Home</a></li>
+						<li class="active"><a href="/blog.html">Blog</a></li>
+						<li><a href="/about.html">About</a></li>
+			</ul>
+		</div>
+		<div id="nav-mobile" class="hidden-desktop nav-collapse collapse">
+			<ul id="mobile-nav" class="nav nav-pills well">
+						<li><a href="/index.html">Home</a></li>
+						<li class="active"><a href="/blog.html">Blog</a></li>
+						<li><a href="/about.html">About</a></li>
+			</ul>
+		</div>      
+	</div><!-- End #header -->
 	
 	<div id="content" class="container padding">
 	
 	<div class="row">
 		<div class="span9">
+	
+		<div class="article">
+			<div class="Table Metal Modern ">
+				<div class="row relative">
+					<div class="span3">
+						<h3 class="span5 flag hidden-phone">Steel Confidence</h3>
+						<h4 class="span5 flag visible-phone">Steel Confidence</h4>
+						<h3 class="flag noshow hidden-phone">&nbsp;</h3>
+						<p>People are always trying to define their style and by so doing putting themselves in a box that ...
+						<br>
+						<a href="/blog/steel-confidence.html">
+						    <!-- "Much greater than" symbol -->
+						    continue &raquo;
+						</a>
+		                <ul class="unstyled">
+		                    
+		                        <li class="inline"><small><span class='tag-link'>
+	        <a href='/blog.html#Metal' class='Metal'>
+	        Metal
+	        </a>
+	    </span></small></li>
+		                    
+		                        <li class="inline"><small><span class='tag-link'>
+	        <a href='/blog.html#Modern' class='Modern'>
+	        Modern
+	        </a>
+	    </span></small></li>
+		                    
+		                        <li class="inline"><small><span class='tag-link'>
+	        <a href='/blog.html#Table' class='Table'>
+	        Table
+	        </a>
+	    </span></small></li>
+		                    
+		                </ul>
+		                <hr>
+						<a href="#modal-steel-confidence" role="button" class="btn modal-btn btn-small" data-toggle="modal"><i class="icon-share-alt"></i> Share</a>
+						<a href="#modal-buy-steel-confidence" role="button" class="btn modal-btn btn-small" data-toggle="modal"><i class="icon-shopping-cart"></i> Buy</a>
+						<br>
+						<br>
+						<div class="modal hide fade" id="modal-steel-confidence">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h3 class="hidden-phone">Share the Steel Coctail Table</h3>
+								<h4 class="visible-phone">Share the Steel Coctail Table</h4>
+								</div>
+								<div class="modal-body">
+								  <div class="row">
+								  	<div class="span2 hidden-phone">
+									  	<img src="/img/steel-coctail-table.jpg" alt="Steel Coctail Table"/>
+								  	</div>
+								  	<div class="span3">
+								  		<p>Thanks for sharing the Steel Coctail Table with your friends&mdash;you must have excellent taste!</p>
+								  		<p>Use one of the social links below to share on your preferred social network.</p>
+								  		<p class="standout pull-right">~ Elle</p>
+								  	</div>
+								  </div>
+							</div>
+							<div class="modal-footer">
+								<div class="span4 pull-left">
+								    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.com/blog/steel-confidence.html&media=http%3A%2F%2Fdesignicity.com/img/steel-coctail-table.jpg&description=Steel Coctail Table"
+								    		class="pin-it-button" 
+								    		count-layout="none">
+								    	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
+								    </a>
+									<a href="https://twitter.com/share" class="twitter-share-button" 
+											data-url="http://designicity.com/blog/steel-confidence.html" 
+											data-text="Steel Coctail Table" 
+											data-related="designicity" 
+											data-count="none" 
+											data-dnt="true">Tweet
+									</a>
+									<div class="fb-like" data-href="http://designicity.com" 
+											data-send="false" 
+											data-layout="button_count" 
+											data-width="450" 
+											data-show-faces="true">
+									</div>								    
+								</div>
+								<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
+									<i class="icon-remove"></i> Close
+								</button>
+							</div>
+						</div>	
+						
+						<div class="modal hide fade" id="modal-buy-steel-confidence">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h3 class="hidden-phone">Buy the Steel Coctail Table</h3>
+								<h4 class="visible-phone">Buy the Steel Coctail Table</h4>						
+							</div>
+							<div class="modal-body">
+							  <div class="row">
+							  	<div class="span2 hidden-phone">
+								  	<img src="/img/steel-coctail-table.jpg" alt="Steel Coctail Table"/>
+							  	</div>
+							  	<div class="span3">
+								  	<p>Hi there&mdash;I'm excited to see you love the Steel Coctail Table as much as I do!</p>
+								  	<p>Click the "buy" button below to send me an email so I can help you add this to your favorite living space.</p>
+								  	<p class="standout pull-right">~ Elle</p>
+							  	</div>
+							  </div>
+							</div>
+							<div class="modal-footer">
+								<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
+									<i class="icon-remove"></i> Close
+								</button>
+								<a class="btn btn-small btn-primary" href="mailto:hello@designicity.com?subject=Designicity%20-%20Steel Coctail Table">
+									<i class="icon-shopping-cart icon-white"></i> Buy
+								</a>
+							</div>
+						</div>							
+					</div>
+					<div class="span6">
+						<a href="/blog/steel-confidence.html">
+							<img class="shadow" src="/img/steel-coctail-table.jpg" alt="Steel Coctail Table" />
+						</a>
+					</div>	
+				</div>
+			</div>
+			<br />
+			<br />
+		</div>
+	
+		<div class="article">
+			<div class="Lighting Color Modern ">
+				<div class="row relative">
+					<div class="span3">
+						<h3 class="span5 flag hidden-phone">Light Impact</h3>
+						<h4 class="span5 flag visible-phone">Light Impact</h4>
+						<h3 class="flag noshow hidden-phone">&nbsp;</h3>
+						<p>While walking in NoLita a few weeks ago &mdash; despite a shouting match between two cab drivers ...
+						<br>
+						<a href="/blog/light-impact.html">
+						    <!-- "Much greater than" symbol -->
+						    continue &raquo;
+						</a>
+		                <ul class="unstyled">
+		                    
+		                        <li class="inline"><small><span class='tag-link'>
+	        <a href='/blog.html#Color' class='Color'>
+	        Color
+	        </a>
+	    </span></small></li>
+		                    
+		                        <li class="inline"><small><span class='tag-link'>
+	        <a href='/blog.html#Lighting' class='Lighting'>
+	        Lighting
+	        </a>
+	    </span></small></li>
+		                    
+		                        <li class="inline"><small><span class='tag-link'>
+	        <a href='/blog.html#Modern' class='Modern'>
+	        Modern
+	        </a>
+	    </span></small></li>
+		                    
+		                </ul>
+		                <hr>
+						<a href="#modal-light-impact" role="button" class="btn modal-btn btn-small" data-toggle="modal"><i class="icon-share-alt"></i> Share</a>
+						<a href="#modal-buy-light-impact" role="button" class="btn modal-btn btn-small" data-toggle="modal"><i class="icon-shopping-cart"></i> Buy</a>
+						<br>
+						<br>
+						<div class="modal hide fade" id="modal-light-impact">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h3 class="hidden-phone">Share the Light Impact</h3>
+								<h4 class="visible-phone">Share the Light Impact</h4>
+								</div>
+								<div class="modal-body">
+								  <div class="row">
+								  	<div class="span2 hidden-phone">
+									  	<img src="/img/light-impact.jpg" alt="Contemporary light fixture of clustered cubes."/>
+								  	</div>
+								  	<div class="span3">
+								  		<p>Thanks for sharing the Light Impact with your friends&mdash;you must have excellent taste!</p>
+								  		<p>Use one of the social links below to share on your preferred social network.</p>
+								  		<p class="standout pull-right">~ Elle</p>
+								  	</div>
+								  </div>
+							</div>
+							<div class="modal-footer">
+								<div class="span4 pull-left">
+								    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.com/blog/light-impact.html&media=http%3A%2F%2Fdesignicity.com/img/light-impact.jpg&description=Contemporary light fixture of clustered cubes."
+								    		class="pin-it-button" 
+								    		count-layout="none">
+								    	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
+								    </a>
+									<a href="https://twitter.com/share" class="twitter-share-button" 
+											data-url="http://designicity.com/blog/light-impact.html" 
+											data-text="Contemporary light fixture of clustered cubes." 
+											data-related="designicity" 
+											data-count="none" 
+											data-dnt="true">Tweet
+									</a>
+									<div class="fb-like" data-href="http://designicity.com" 
+											data-send="false" 
+											data-layout="button_count" 
+											data-width="450" 
+											data-show-faces="true">
+									</div>								    
+								</div>
+								<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
+									<i class="icon-remove"></i> Close
+								</button>
+							</div>
+						</div>	
+						
+						<div class="modal hide fade" id="modal-buy-light-impact">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h3 class="hidden-phone">Buy the Light Impact</h3>
+								<h4 class="visible-phone">Buy the Light Impact</h4>						
+							</div>
+							<div class="modal-body">
+							  <div class="row">
+							  	<div class="span2 hidden-phone">
+								  	<img src="/img/light-impact.jpg" alt="Contemporary light fixture of clustered cubes."/>
+							  	</div>
+							  	<div class="span3">
+								  	<p>Hi there&mdash;I'm excited to see you love the Light Impact as much as I do!</p>
+								  	<p>Click the "buy" button below to send me an email so I can help you add this to your favorite living space.</p>
+								  	<p class="standout pull-right">~ Elle</p>
+							  	</div>
+							  </div>
+							</div>
+							<div class="modal-footer">
+								<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
+									<i class="icon-remove"></i> Close
+								</button>
+								<a class="btn btn-small btn-primary" href="mailto:hello@designicity.com?subject=Designicity%20-%20Light Impact">
+									<i class="icon-shopping-cart icon-white"></i> Buy
+								</a>
+							</div>
+						</div>							
+					</div>
+					<div class="span6">
+						<a href="/blog/light-impact.html">
+							<img class="shadow" src="/img/light-impact.jpg" alt="Contemporary light fixture of clustered cubes." />
+						</a>
+					</div>	
+				</div>
+			</div>
+			<br />
+			<br />
+		</div>
+	
+		<div class="article">
+			<div class="Art Architecture ">
+				<div class="row relative">
+					<div class="span3">
+						<h3 class="span5 flag hidden-phone">Zigzag at Metro Show</h3>
+						<h4 class="span5 flag visible-phone">Zigzag at Metro Show</h4>
+						<h3 class="flag noshow hidden-phone">&nbsp;</h3>
+						<p>New York City is so much more than Times Square, pizza, and models.  The city is complex and ...
+						<br>
+						<a href="/blog/zig-zag-metro.html">
+						    <!-- "Much greater than" symbol -->
+						    continue &raquo;
+						</a>
+		                <ul class="unstyled">
+		                    
+		                        <li class="inline"><small><span class='tag-link'>
+	        <a href='/blog.html#Architecture' class='Architecture'>
+	        Architecture
+	        </a>
+	    </span></small></li>
+		                    
+		                        <li class="inline"><small><span class='tag-link'>
+	        <a href='/blog.html#Art' class='Art'>
+	        Art
+	        </a>
+	    </span></small></li>
+		                    
+		                </ul>
+		                <hr>
+						<a href="#modal-zig-zag-metro" role="button" class="btn modal-btn btn-small" data-toggle="modal"><i class="icon-share-alt"></i> Share</a>
+						<a href="#modal-buy-zig-zag-metro" role="button" class="btn modal-btn btn-small" data-toggle="modal"><i class="icon-shopping-cart"></i> Buy</a>
+						<br>
+						<br>
+						<div class="modal hide fade" id="modal-zig-zag-metro">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h3 class="hidden-phone">Share the Zigzag Wall</h3>
+								<h4 class="visible-phone">Share the Zigzag Wall</h4>
+								</div>
+								<div class="modal-body">
+								  <div class="row">
+								  	<div class="span2 hidden-phone">
+									  	<img src="/img/zigzag_metro_show.jpg" alt="Art installation by incredible architecture team."/>
+								  	</div>
+								  	<div class="span3">
+								  		<p>Thanks for sharing the Zigzag Wall with your friends&mdash;you must have excellent taste!</p>
+								  		<p>Use one of the social links below to share on your preferred social network.</p>
+								  		<p class="standout pull-right">~ Elle</p>
+								  	</div>
+								  </div>
+							</div>
+							<div class="modal-footer">
+								<div class="span4 pull-left">
+								    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.com/blog/zig-zag-metro.html&media=http%3A%2F%2Fdesignicity.com/img/zigzag_metro_show.jpg&description=Art installation by incredible architecture team."
+								    		class="pin-it-button" 
+								    		count-layout="none">
+								    	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
+								    </a>
+									<a href="https://twitter.com/share" class="twitter-share-button" 
+											data-url="http://designicity.com/blog/zig-zag-metro.html" 
+											data-text="Art installation by incredible architecture team." 
+											data-related="designicity" 
+											data-count="none" 
+											data-dnt="true">Tweet
+									</a>
+									<div class="fb-like" data-href="http://designicity.com" 
+											data-send="false" 
+											data-layout="button_count" 
+											data-width="450" 
+											data-show-faces="true">
+									</div>								    
+								</div>
+								<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
+									<i class="icon-remove"></i> Close
+								</button>
+							</div>
+						</div>	
+						
+						<div class="modal hide fade" id="modal-buy-zig-zag-metro">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h3 class="hidden-phone">Buy the Zigzag Wall</h3>
+								<h4 class="visible-phone">Buy the Zigzag Wall</h4>						
+							</div>
+							<div class="modal-body">
+							  <div class="row">
+							  	<div class="span2 hidden-phone">
+								  	<img src="/img/zigzag_metro_show.jpg" alt="Art installation by incredible architecture team."/>
+							  	</div>
+							  	<div class="span3">
+								  	<p>Hi there&mdash;I'm excited to see you love the Zigzag Wall as much as I do!</p>
+								  	<p>Click the "buy" button below to send me an email so I can help you add this to your favorite living space.</p>
+								  	<p class="standout pull-right">~ Elle</p>
+							  	</div>
+							  </div>
+							</div>
+							<div class="modal-footer">
+								<button class="btn btn-small hidden-phone" data-dismiss="modal" aria-hidden="true">
+									<i class="icon-remove"></i> Close
+								</button>
+								<a class="btn btn-small btn-primary" href="mailto:hello@designicity.com?subject=Designicity%20-%20Zigzag Wall">
+									<i class="icon-shopping-cart icon-white"></i> Buy
+								</a>
+							</div>
+						</div>							
+					</div>
+					<div class="span6">
+						<a href="/blog/zig-zag-metro.html">
+							<img class="shadow" src="/img/zigzag_metro_show.jpg" alt="Art installation by incredible architecture team." />
+						</a>
+					</div>	
+				</div>
+			</div>
+			<br />
+			<br />
+		</div>
 	
 		<div class="article">
 			<div class="Modern Bed Bedroom Technology ">
@@ -98,7 +466,7 @@
 						<h3 class="flag noshow hidden-phone">&nbsp;</h3>
 						<p>New Yorkers know how precious every square foot in their apartment is.  It can be a challenge to ...
 						<br>
-						<a href="/blog/trak-kit-bed.html">
+						<a href="/blog/retractable-bed.html">
 						    <!-- "Much greater than" symbol -->
 						    continue &raquo;
 						</a>
@@ -130,11 +498,11 @@
 		                    
 		                </ul>
 		                <hr>
-						<a href="#modal-trak-kit-bed" role="button" class="btn modal-btn btn-small" data-toggle="modal"><i class="icon-share-alt"></i> Share</a>
-						<a href="#modal-buy-trak-kit-bed" role="button" class="btn modal-btn btn-small" data-toggle="modal"><i class="icon-shopping-cart"></i> Buy</a>
+						<a href="#modal-retractable-bed" role="button" class="btn modal-btn btn-small" data-toggle="modal"><i class="icon-share-alt"></i> Share</a>
+						<a href="#modal-buy-retractable-bed" role="button" class="btn modal-btn btn-small" data-toggle="modal"><i class="icon-shopping-cart"></i> Buy</a>
 						<br>
 						<br>
-						<div class="modal hide fade" id="modal-trak-kit-bed">
+						<div class="modal hide fade" id="modal-retractable-bed">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 								<h3 class="hidden-phone">Share the Retractable Bed</h3>
@@ -143,7 +511,7 @@
 								<div class="modal-body">
 								  <div class="row">
 								  	<div class="span2 hidden-phone">
-									  	<img src="/img/trak-kit-bed-1.jpg" alt="Modern bed that raises to the cieling, perfect for a studio apartment."/>
+									  	<img src="/img/retractable-bed-1.jpg" alt="Modern bed that raises to the ceiling, perfect for a studio apartment."/>
 								  	</div>
 								  	<div class="span3">
 								  		<p>Thanks for sharing the Retractable Bed with your friends&mdash;you must have excellent taste!</p>
@@ -154,14 +522,14 @@
 							</div>
 							<div class="modal-footer">
 								<div class="span4 pull-left">
-								    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.com/blog/trak-kit-bed.html&media=http%3A%2F%2Fdesignicity.com/img/trak-kit-bed-1.jpg&description=Modern bed that raises to the cieling, perfect for a studio apartment."
+								    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fdesignicity.com/blog/retractable-bed.html&media=http%3A%2F%2Fdesignicity.com/img/retractable-bed-1.jpg&description=Modern bed that raises to the ceiling, perfect for a studio apartment."
 								    		class="pin-it-button" 
 								    		count-layout="none">
 								    	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
 								    </a>
 									<a href="https://twitter.com/share" class="twitter-share-button" 
-											data-url="http://designicity.com/blog/trak-kit-bed.html" 
-											data-text="Modern bed that raises to the cieling, perfect for a studio apartment." 
+											data-url="http://designicity.com/blog/retractable-bed.html" 
+											data-text="Modern bed that raises to the ceiling, perfect for a studio apartment." 
 											data-related="designicity" 
 											data-count="none" 
 											data-dnt="true">Tweet
@@ -179,7 +547,7 @@
 							</div>
 						</div>	
 						
-						<div class="modal hide fade" id="modal-buy-trak-kit-bed">
+						<div class="modal hide fade" id="modal-buy-retractable-bed">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 								<h3 class="hidden-phone">Buy the Retractable Bed</h3>
@@ -188,7 +556,7 @@
 							<div class="modal-body">
 							  <div class="row">
 							  	<div class="span2 hidden-phone">
-								  	<img src="/img/trak-kit-bed-1.jpg" alt="Modern bed that raises to the cieling, perfect for a studio apartment."/>
+								  	<img src="/img/retractable-bed-1.jpg" alt="Modern bed that raises to the ceiling, perfect for a studio apartment."/>
 							  	</div>
 							  	<div class="span3">
 								  	<p>Hi there&mdash;I'm excited to see you love the Retractable Bed as much as I do!</p>
@@ -208,8 +576,8 @@
 						</div>							
 					</div>
 					<div class="span6">
-						<a href="/blog/trak-kit-bed.html">
-							<img class="shadow" src="/img/trak-kit-bed-1.jpg" alt="Modern bed that raises to the cieling, perfect for a studio apartment." />
+						<a href="/blog/retractable-bed.html">
+							<img class="shadow" src="/img/retractable-bed-1.jpg" alt="Modern bed that raises to the ceiling, perfect for a studio apartment." />
 						</a>
 					</div>	
 				</div>
@@ -939,7 +1307,7 @@
 		</div>
 	
 		<div class="article">
-			<div class="Modern Seating ">
+			<div class="Modern Seating Metal ">
 				<div class="row relative">
 					<div class="span3">
 						<h3 class="span5 flag hidden-phone">Make a Statement</h3>
@@ -952,6 +1320,12 @@
 						    continue &raquo;
 						</a>
 		                <ul class="unstyled">
+		                    
+		                        <li class="inline"><small><span class='tag-link'>
+	        <a href='/blog.html#Metal' class='Metal'>
+	        Metal
+	        </a>
+	    </span></small></li>
 		                    
 		                        <li class="inline"><small><span class='tag-link'>
 	        <a href='/blog.html#Modern' class='Modern'>
@@ -1418,6 +1792,22 @@
 		    
 		         
 		        	<li class="inline"><small><span class='tag-link'>
+	        <a href='/blog.html#Architecture' class='Architecture'>
+	        Architecture
+	        </a>
+	    </span></small></li>
+		        
+		    
+		         
+		        	<li class="inline"><small><span class='tag-link'>
+	        <a href='/blog.html#Art' class='Art'>
+	        Art
+	        </a>
+	    </span></small></li>
+		        
+		    
+		         
+		        	<li class="inline"><small><span class='tag-link'>
 	        <a href='/blog.html#Bath-Tub' class='Bath-Tub'>
 	        Bath Tub
 	        </a>
@@ -1452,6 +1842,14 @@
 		        	<li class="inline"><small><span class='tag-link'>
 	        <a href='/blog.html#Chest-of-Drawers' class='Chest-of-Drawers'>
 	        Chest of Drawers
+	        </a>
+	    </span></small></li>
+		        
+		    
+		         
+		        	<li class="inline"><small><span class='tag-link'>
+	        <a href='/blog.html#Color' class='Color'>
+	        Color
 	        </a>
 	    </span></small></li>
 		        
@@ -1500,6 +1898,14 @@
 		        	<li class="inline"><small><span class='tag-link'>
 	        <a href='/blog.html#Living-Room' class='Living-Room'>
 	        Living Room
+	        </a>
+	    </span></small></li>
+		        
+		    
+		         
+		        	<li class="inline"><small><span class='tag-link'>
+	        <a href='/blog.html#Metal' class='Metal'>
+	        Metal
 	        </a>
 	    </span></small></li>
 		        
@@ -1603,7 +2009,7 @@
 	<!-- Start #footer -->
 	<div id="footer">
 			<div class="container padding">
-				<p class="hidden-phone pull-right">&copy; 2012 Designicity&nbsp;&nbsp;|&nbsp;&nbsp; Site design by <a href="http://dmbaughman.com">dmbaughman</a></p>
+				<p class="hidden-phone pull-right">&copy; 2013 Designicity&nbsp;&nbsp;|&nbsp;&nbsp; Site design by <a href="http://dmbaughman.com">dmbaughman</a></p>
 				<ul class="unstyled">
 					<li class="inline"><a href="http://pinterest.com/designicity"><i class="icons-social-light pinterest"></i>designicity</a></li>
 					<li class="inline"><a href="http://facebook.com/designicity"><i class="icons-social-light facebook"></i>designicity</a></li>
@@ -1616,7 +2022,7 @@
 	</div>
 	
 	<!-- Document Ready Scripts -->
-	<script src="/js/bootstrap-modal.js"></script>    
+	<script src="/js/bootstrap.min.js"></script>    
 	
 	<script type="text/javascript">
 		// Tag filtering (post-load)

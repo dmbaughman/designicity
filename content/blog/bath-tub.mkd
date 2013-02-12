@@ -6,7 +6,7 @@ tags: [Modern, Bath Tub, Bathroom]
 img: /img/bath-tub.jpg
 img_prev: /img/bath-tub-preview.jpg
 img_alt: Modern and minimalist bath tub
-width: col2
+width: col3
 ---
 Style and comfort...can the two exist together?  As you know by now, aesthetic comes first for me; however, the best design (and the most difficult to accomplish) is both beautiful and functional design.  Example: the barcalounger.  This is what I think heaven would feel like but they're ugly as sin.
 

@@ -7,7 +7,7 @@ img: /img/cumberland-dunn-lamps.jpg
 img_prev: /img/cumberland-dunn-lamps-preview.jpg
 img_alt: Gray glass hanging light fixtures
 width: col3
-block: col3
+block: col2
 ---
 Two words: Gray. Glass.  The effect that gray glass can have on a space is intimate and soothing - it is *understated and incredibly chic*.  When used on a light fixture such as these, the design lends itself to allow the gray glass to shine, so to speak.  
 

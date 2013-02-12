@@ -26,8 +26,8 @@
 	<link rel="stylesheet"  type="text/css" href="/css/responsive.css" />
 	
 	<!-- Preload Scripts -->
-	<script src="/js/jquery.js"></script>
-	<script src="/js/modernizr-2.6.2-min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 	
     <script src="/js/jquery.masonry.min.js"></script>
     <script src="/js/jQuery.BlackAndWhite.min.js"></script>
@@ -70,26 +70,31 @@
 <body>
 	<!-- Start #header -->
 	<div id="header" class="container padding">
-		<div class="row">
-	      <div id="logo" class="span3">
+		<div id="logo" class="pull-left">
 			<a href="/" title="designicity">
-				<img class="site-logo" src="/img/designicity-logo.png" alt="designicity" />
+			<img class="site-logo" src="/img/designicity-logo.png" alt="designicity" />
 			</a>	      
-	      </div>
-	      <div class="span6 offset3">
-		      <ul id="site-nav" class="nav nav-pills pull-right hidden-phone">
-		            <li class="active"><a href="/index.html">Home</a></li>
-		            <li><a href="/blog.html">Blog</a></li>
-		            <li><a href="/about.html">About</a></li>
-		      </ul>
-		      <ul id="mobile-nav" class="nav nav-pills visible-phone">
-		            <li class="active"><a href="/index.html">Home</a></li>
-		            <li><a href="/blog.html">Blog</a></li>
-		            <li><a href="/about.html">About</a></li>
-		      </ul>		      </div>
-	    </div>
-	</div>
-	<!-- End #header -->
+		</div>
+		<button type="button" id="nav-toggle" class="btn btn-inverse btn-navbar hidden-desktop pull-right" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>					
+		<div id="nav-desktop" class="visible-desktop">
+			<ul id="site-nav" class="nav nav-pills pull-right">
+						<li class="active"><a href="/index.html">Home</a></li>
+						<li><a href="/blog.html">Blog</a></li>
+						<li><a href="/about.html">About</a></li>
+			</ul>
+		</div>
+		<div id="nav-mobile" class="hidden-desktop nav-collapse collapse">
+			<ul id="mobile-nav" class="nav nav-pills well">
+						<li class="active"><a href="/index.html">Home</a></li>
+						<li><a href="/blog.html">Blog</a></li>
+						<li><a href="/about.html">About</a></li>
+			</ul>
+		</div>      
+	</div><!-- End #header -->
 	
 	<div id="content" class="container padding">
 	
@@ -97,11 +102,36 @@
     <div class="container gallery">
 		
 			<div class="item bwWrapper col2">
-	    		<a href="/blog/trak-kit-bed.html">
-	    			<img class="shadow" src="/img/trak-kit-bed-1.jpg" alt="Modern bed that raises to the cieling, perfect for a studio apartment." />
+	    		<a href="/blog/steel-confidence.html">
+	    			<img class="shadow" src="/img/steel-coctail-table.jpg" alt="Steel Coctail Table" />
+	    		</a>
+	    		<!--h4 class="flag">Steel Confidence</h4-->
+			</div>
+		
+			<div class="item bwWrapper col2">
+	    		<a href="/blog/light-impact.html">
+	    			<img class="shadow" src="/img/light-impact.jpg" alt="Contemporary light fixture of clustered cubes." />
+	    		</a>
+	    		<!--h4 class="flag">Light Impact</h4-->
+			</div>
+				<div class="item color-block hidden-phone col2 ">
+				</div>
+		
+			<div class="item bwWrapper col3">
+	    		<a href="/blog/zig-zag-metro.html">
+	    			<img class="shadow" src="/img/zigzag_metro_show.jpg" alt="Art installation by incredible architecture team." />
+	    		</a>
+	    		<!--h4 class="flag">Zigzag at Metro Show</h4-->
+			</div>
+		
+			<div class="item bwWrapper col2">
+	    		<a href="/blog/retractable-bed.html">
+	    			<img class="shadow" src="/img/retractable-bed-1.jpg" alt="Modern bed that raises to the ceiling, perfect for a studio apartment." />
 	    		</a>
 	    		<!--h4 class="flag">Floor to Ceiling</h4-->
 			</div>
+				<div class="item color-block hidden-phone col1 ">
+				</div>
 		
 			<div class="item bwWrapper col3">
 	    		<a href="/blog/hudson-sofa.html">
@@ -162,7 +192,7 @@
 	    		</a>
 	    		<!--h4 class="flag">Gray Colored Glasses</h4-->
 			</div>
-				<div class="item color-block hidden-phone col3 ">
+				<div class="item color-block hidden-phone col2 ">
 				</div>
 		
 			<div class="item bwWrapper col2">
@@ -172,7 +202,7 @@
 	    		<!--h4 class="flag">Round Table Discussion</h4-->
 			</div>
 		
-			<div class="item bwWrapper col2">
+			<div class="item bwWrapper col3">
 	    		<a href="/blog/bath-tub.html">
 	    			<img class="shadow" src="/img/bath-tub.jpg" alt="Modern and minimalist bath tub" />
 	    		</a>
@@ -188,7 +218,7 @@
 	<!-- Start #footer -->
 	<div id="footer">
 			<div class="container padding">
-				<p class="hidden-phone pull-right">&copy; 2012 Designicity&nbsp;&nbsp;|&nbsp;&nbsp; Site design by <a href="http://dmbaughman.com">dmbaughman</a></p>
+				<p class="hidden-phone pull-right">&copy; 2013 Designicity&nbsp;&nbsp;|&nbsp;&nbsp; Site design by <a href="http://dmbaughman.com">dmbaughman</a></p>
 				<ul class="unstyled">
 					<li class="inline"><a href="http://pinterest.com/designicity"><i class="icons-social-light pinterest"></i>designicity</a></li>
 					<li class="inline"><a href="http://facebook.com/designicity"><i class="icons-social-light facebook"></i>designicity</a></li>
@@ -201,7 +231,7 @@
 	</div>
 	
 	<!-- Document Ready Scripts -->
-	<script src="/js/bootstrap-modal.js"></script>    
+	<script src="/js/bootstrap.min.js"></script>    
 	
 
 	<!-- Le Goog Analytics -->
