@@ -1,9 +1,9 @@
 title: "It'Scot Style:  Tobi Fairley"
-name: Scottish Chair
+name: Scottish Chair by Tobi Fairley
 date: 2013-04-01
 category: [blog]
 tags: [Living Room, Seating, Upholstry]
-img: /img/scottish-chair.jpg
+img: /img/scottish-chair-tobi-fairley.jpg
 img_alt: Traditional arm chair featuring Scottish textile patterns.
 width: col1
 ---
